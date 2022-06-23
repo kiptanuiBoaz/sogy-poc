@@ -261,3 +261,13 @@
     .roomsCard{
         display: flex;
     }
+
+    .rooms-card >header{
+        color: #ffba5a;
+        font-size: 1.5rem;
+
+    }
+
+    .roomsCard footer{
+        font-size: 1rem;
+    }
