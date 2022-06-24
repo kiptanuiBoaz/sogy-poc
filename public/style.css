@@ -61,7 +61,6 @@
         background-image:linear-gradient( rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0.711) ),
         url("https://images.squarespace-cdn.com/content/v1/58ff2140ff7c5003d9b4d5e3/1653525853176-FVU7VCVPXAU3NSW5CVVW/unsplash-image-rmUFInoS3iw.jpg?format=1000w");
         height: 20cm;
-        
         margin-top: -20px;
         background-attachment: fixed;
         background-position: center;
@@ -74,24 +73,39 @@
 
   .welcomeText{
     color:white;
-    margin-top: 30px;
+    top: 80px;
+    position: relative;
+    font-family: cursive;
   }
 
     .homepage > p{
-        margin-top: 20px;
+        
         color: white;
         font-size: 7mm;
+        top:30px;
+       
         /* font-family: 'Courgette', cursive; */
     }
 
-    
+    .homepage>:nth-child(4){
+        margin-top: 15px;
+        position: relative;
+      
+    }
 
-    
+    .homepage > P:nth-child(2){
+        margin-top: 80px;
+        position: relative;
+       
+    }
 
     .typing-effect{
         color:#fff;
         font-size: 10mm;
         font-weight: bold;
+        top:30px;
+        position: relative;
+        
     }
 
     /* reserve now button */
@@ -110,6 +124,7 @@
         z-index: 2;
         margin: auto;
         border: 2px solid #ffba5a;
+        top: 30px;
     }
       
     .bn31:hover {
@@ -154,16 +169,24 @@
     }
 
     /* header of the .welcome and the rooms section */
-    .rooms>div>h1, .welcome > div >h1, .photos> div> h1{
+    .rooms>div>h1, .welcome > div >h1, .photos> div> h1, menu>div>h1{
         font-family:cursive;
         font-size: 50px;
+        padding-top:40px;
+        
         
     }
 
     .welcome>div>p, .rooms>div>p, .photos>div>p{
         font-size: large;
         padding-top: 15px ;
+        color: #545b61;
+        padding: 10px;
+        font-weight: 300;
+        font-family: cursive;
     }
+
+  
 
     /* button inside the welcome page styling */
     .welcome-buttons{
@@ -300,10 +323,12 @@
     } */
 
 /* photos section styling */
+    /* photos containere */
     .photos{
         background-color: #ebe8e5;
     }
 
+    /* the p and h inside photos */
     .photosContent {
         justify-content: center;
         width: 50%;
@@ -313,4 +338,31 @@
     .photosCorousel{
         margin: 0px 10%;
         
+    }
+
+/* menu styling  */
+    /* the  menu container */
+    .menu{
+        background-image: url("https://preview.colorlib.com/theme/sogo/images/xhero_3.jpg.pagespeed.ic.E0AL0Eb0b0.webp");
+        background-position: fixed;
+    }
+
+    .menu>div>p{
+        color:#fff;
+        font-size: large;
+        padding-top: 15px ;
+        padding: 10px;
+        font-weight: 300;
+        font-family: cursive;
+        margin: 0px 40px ;
+        
+    }
+
+    .menu>div{
+        width: 60%;
+        margin: 0 auto ;
+    }
+    .menu>div>h1{
+        color:#fff;
+        padding-top:40px;
     }
