@@ -281,7 +281,7 @@
         
     }
 
-    /* the descriptio inside the rooms div */
+    /* the description inside the rooms div */
     .rooms>div>p{
         width: 60%;
         margin-left: 20%;
@@ -299,33 +299,36 @@
 
     /* the rooms card picture */
    .room-card img{
-    height: 6cm;
-    width: auto;
-    margin: 10px
+        height: 5.5cm;
+        width: auto;
+        margin: 10px ;   
    }
 
+   /* room pic effecton hover */
    .room-card img:hover{
-    
-    transform: scale(1.1);
-        
+        transform: scale(1.1);
    }
-
-    /* .roomCardElements> header{
-        color: #ffba5a;
+   /* the room type name */
+    .roomCard> header{
+        color: #e8a952;
         font-size: 1.5rem;
+        padding: 10px;
        
     }
 
     
-
-    .roomCardElements> footer{
+    /* the room pricings */
+    .roomCard> footer{
         font-size: 1rem;
-    } */
+        font-family: monospace;
+        font-weight: 300;
+    }
 
 /* photos section styling */
     /* photos containere */
     .photos{
         background-color: #ebe8e5;
+        padding-bottom:20px;
     }
 
     /* the p and h inside photos */
@@ -337,6 +340,7 @@
 
     .photosCorousel{
         margin: 0px 10%;
+        margin-bottom: 20px;
         
     }
 
@@ -347,6 +351,7 @@
         background-position: fixed;
     }
 
+    /* the description in the menu */
     .menu>div>p{
         color:#fff;
         font-size: large;
@@ -357,12 +362,33 @@
         margin: 0px 40px ;
         
     }
+    /* the p and h atop of the menu */
 
     .menu>div{
         width: 60%;
         margin: 0 auto ;
     }
+
+    /* the title */
     .menu>div>h1{
         color:#fff;
         padding-top:40px;
+        font-family: cursive;
+    }
+
+    /* the buttons container */
+    .buttonsContainer{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* the food types */
+    .menu button{
+        border: none;
+        color:#fd8421;
+        background: transparent;
+        font-size: 1.5rem;
+        margin: 20px;
+        font-weight: bold;
+        
     }
