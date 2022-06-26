@@ -133,6 +133,10 @@
         background-image: linear-gradient(to right, #808080 0%, #ffba5a 100%);
         border: transparent;
     }
+
+    .bn31span:hover::after{
+        content: "\00bb";
+    }
       
     /* the button and the text inside the button */
     .bn31 .bn31span {
