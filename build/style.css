@@ -484,7 +484,6 @@
         flex-wrap: wrap;
         justify-content: center;
         padding-top:30px;
-        padding-bottom: 30px;
     }
 
     .events>div{
@@ -566,54 +565,9 @@
     }
 
 /* reserve container styling */
-    /* cover */
-    .reserve{
-        background-attachment: fixed;
-
-        font-size:x-large ;
-        color: #fff;
-        background-position: center;
-        display: flex;
-        
-        flex-wrap: wrap;
-        padding: 5%;
-        margin-bottom: 70px;
-        background-image:linear-gradient( rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0.711) ),
-        url("https://preview.colorlib.com/theme/sogo/images/xhero_4.jpg.pagespeed.ic.1tASHklKp8.webp");
-        
-    }
-
-    .reserve ul{
-        list-style-type:none;
-        
-    }
-
-    .reserve ul>li{
-        text-align: left;
-    }
-
-    .reserve ul>li>span{
-        color:#e8a952
-    }
-
-    .reserve>:nth-child(1)>h1{
-        width: 550px;
-        text-align: left;
-    
-    }
-
-    .reserve>:nth-child(2){
-        padding-left:50px;
-        
-    }
-
-    .reserve a{
-        margin: 10px auto 50px auto ;
-        left: 60%;
-        
-    }
-
-    .usefuLinks{
-        background-color: rgb(26, 26, 26);
-        
-    }
+/* cover */
+.reserve{
+    background-position: fixed;
+    background-image: url(https://preview.colorlib.com/theme/sogo/images/xhero_4.jpg.pagespeed.ic.1tASHklKp8.webp);
+    font-size:x-large ;
+}
