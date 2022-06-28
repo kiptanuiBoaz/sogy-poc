@@ -599,8 +599,36 @@
     .reserve>:nth-child(1)>h1{
         width: 550px;
         text-align: left;
-    
+        margin: 20px 20px 0px 20px;
+        
+    }     
+
+    .reserve>:nth-child(1){
+        border-style: solid;
+        border-image: linear-gradient( to bottom,  #e8a952,  rgba(0, 0, 0, 0)  ) 0.5 100%;
     }
+
+    .reserve>:nth-child(1)>h1>Span, .reserve>:nth-child(1)>h3>Span{
+        color:#e8a952;
+    }
+
+    .reserve>:nth-child(1)>h3 ,  .reserve>:nth-child(1)>p{
+        text-align: right;
+        margin:  0px 20px;
+        font-weight: 200;
+        font-size: 1.2rem;
+        
+    }
+
+    .reserve>:nth-child(1)>p{
+        font-size: 1rem;
+        color:#e8a952;
+        font-weight: 200;
+        margin-right: 110px;
+
+    }
+    
+    
 
     .reserve>:nth-child(2){
         padding-left:50px;
