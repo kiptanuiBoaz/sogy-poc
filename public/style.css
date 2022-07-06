@@ -73,7 +73,7 @@
 
   .welcomeText{
     color:white;
-    top: 80px;
+    top: 150px;
     position: relative;
     font-family: cursive;
   }
@@ -81,8 +81,8 @@
     .homepage > p{
         
         color: white;
-        font-size: 7mm;
-        top:30px;
+        font-size: 11mm;
+        top:100px;
        
         /* font-family: 'Courgette', cursive; */
     }
@@ -101,9 +101,9 @@
 
     .typing-effect{
         color:#fff;
-        font-size: 10mm;
+        font-size: 13mm;
         font-weight: bold;
-        top:30px;
+        top:90px;
         position: relative;
         
     }
@@ -123,7 +123,7 @@
         z-index: 2;
         margin: auto;
         border: 2px solid #ffba5a;
-        top: 30px;
+        top: 100px;
     }
       
     .bn31:hover {
@@ -316,7 +316,7 @@
 
     /* the rooms card picture */
    .room-card img{
-        height: 5.5cm;
+        height: 6cm;
         width: auto;
         margin: 10px ;
         box-shadow: 1px 3px 11px #545b61;
@@ -419,25 +419,7 @@
         transition: text-decoration 1.5s;
         letter-spacing: 10px;
     }
-        
-    .menu button::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0.1em;
-        background-color: hotpink;
-        opacity: 0;
-        transition: opacity 300ms, transform 300ms;
-    }
-
-    
-    menu button:hover::after,
-    menu button:focus::after {
-        opacity: 1;
-        transform: translate3d(0, 0.2em, 0);
-    }
+ 
 
     .menu button:hover{
         text-decoration: underline #e8a952;
@@ -713,7 +695,7 @@
     .usefuLinks>div>a {
         text-decoration: none;
         padding:20px;
-        color:#7a848c;
+        color:#b1b9c0;
         font-size: 1.6rem;
         
         
@@ -760,11 +742,11 @@
         font-size: 1.6rem;
     } 
 
-    .newsLetter>a>span{
+    .newsButton>a>span{
         margin: auto;
     }
 
-    .newsLetter>a:hover{
+    .newsButton>a:hover{
         width: 180px;
     }
 
@@ -773,12 +755,16 @@
         font-size: 1.6rem;
     }
     .contactInfo>p>span{
-        color:rgb(173, 184, 190);
+        color:rgb(205, 212, 216);
        
     }
 
+    .contactInfo>p:hover{
+        color:#fff;
+    }
+
     .contactInfo>p{
-        color:#7a848c;
+        color:#b4bbc1;
     }
 
 
@@ -788,22 +774,37 @@
         background-color:#0e0e10;
         color:#fff;
         padding:30px;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
-    .footer>img{
+    .footer>div>img{
         height: 50px;
         border-radius: 50%;
     }
 
-    .footer>a{
+    .footer>div>a{
         display: block;
-        margin: 20px;
-        color:#545b61;
+        margin: 15px;
+        color:#818c95;
         text-decoration: none;
     }
 
-    .footer>a:hover{
-        text-decoration:  underline solid #545b61 ;
+    .footer>div>a:hover{
+      
+        color: #ffba5a;
         
+    }
+
+    .icons{
+        display: flex;
+        justify-content: center;
+    }
+
+    .topIcon{
+        color:#e8a952;
+        margin-top: 30px;
+    }
+
+    .restIcon{
+        color:#e8a952;
     }
