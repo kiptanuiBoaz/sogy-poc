@@ -696,10 +696,11 @@
         display: flex;
         flex-wrap: wrap;
         width: 50%;
+        margin-bottom: 30px;
     }
 
     .usefuLinks>div{
-        padding: 20px 50px 5px 5px; 
+        padding: 20px 50px 5px 20px; 
        
     }
 
@@ -749,7 +750,7 @@
     .newsLetter>a{
         width: 150px;
         height: 50px;
-        margin:-20px auto 30px auto;
+        margin:-80px auto 30px auto;
         font-size: 1.6rem;
     } 
 
