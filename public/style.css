@@ -42,6 +42,17 @@
     }
 
 /* navbar style */
+
+   
+    .navContainer{
+        position:fixed;
+        top: 0;
+        
+        width: 100%;
+        
+        
+    }
+
     .navlink:hover{
         color:#fd8421 ;
     }
