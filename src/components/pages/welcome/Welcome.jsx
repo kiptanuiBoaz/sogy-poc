@@ -7,7 +7,7 @@ import { Zoom } from "react-reveal";
 
 function Welcome() {
   return (
-    <section  className="welcome">
+    <section id="welcome"  className="welcome">
 
       <div>
         <h1>Welcome!</h1>

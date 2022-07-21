@@ -6,6 +6,8 @@ import Welcome from "../welcome/Welcome";
 import Room from "../rooms/Rooms";
 import ContactUs from "../contactUs/ContactUs";
 import NoPage from "../Nopage"
+import { HashLink } from 'react-router-hash-link';
+import "../welcome/Welcome"
 
 function NavRoutes() {
   return (
@@ -17,7 +19,7 @@ function NavRoutes() {
             <Routes>
         
                 <Route  path='/'  strict element={Homepage} />
-                <Route path='/welcome' element={<Welcome/>} />
+                <HashLink to="../welcome/Welcome#welcome"></HashLink>
                 <Route path='/room' element={<Room/>} />
                 <Route path='/contactUs' element={<ContactUs/>} />
                 <Route path="*" element={<NoPage />} /> 
