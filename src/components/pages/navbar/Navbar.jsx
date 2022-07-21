@@ -20,7 +20,7 @@ function Navbar() {
             Sogy Hotel
           </NavLink>
 
-          <NavLink to='/welcome' className={"navlink"} activeStyle>
+          <NavLink to = {{pathname:"../welcome/Welcome#welcome"}}  className={"navlink"} activeStyle>
             About Us
           </NavLink>
 
