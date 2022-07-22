@@ -6,7 +6,7 @@ import Welcome from "../welcome/Welcome";
 import Room from "../rooms/Rooms";
 import ContactUs from "../contactUs/ContactUs";
 import NoPage from "../Nopage"
-import { HashLink } from 'react-router-hash-link';
+
 
 function NavRoutes() {
   return (

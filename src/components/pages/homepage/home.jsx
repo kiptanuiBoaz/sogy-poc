@@ -1,14 +1,14 @@
 import React , { useState, useEffect } from "react";
-import  NavRoutes from "../navbar/NavRoutes";
-import Homepage from "../pages/homepage/Homepage";
-import Welcome from "../pages/welcome/Welcome";
-import Footer from "../components/pages/Footer";
-import Rooms from "../pages/rooms/Rooms";
-import Reserve from "../pages/reserve/Reserve";
-import Photos from "../pages/photosPage/Photos";
-import Events from "../pages/events/EventContainer";
-import Menu from "../pages/menu/Menu";
-import ContactUs from "../pages/contactUs/ContactUs";
+import  NavRoutes from "../navbar/Navbar";
+import Homepage from "../homepage/Homepage";
+import Welcome from "../welcome/Welcome";
+import Footer from "../Footer";
+import Rooms from "../rooms/Rooms";
+import Reserve from "../reserve/Reserve";
+import Photos from "../photosPage/Photos";
+import Events from "../events/events";
+import Menu from "../menu/Menu";
+import ContactUs from "../contactUs/ContactUs";
 
 function Home (){
     
