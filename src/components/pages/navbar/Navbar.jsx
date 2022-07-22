@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink ,Nav, Bars , NavMenu} from "./NavElements";
+import { Link ,Cont, Bars , Menu} from "./NavElements";
+import { NavHashLink } from 'react-router-hash-link';
 
 
 function Navbar() {
@@ -7,38 +8,41 @@ function Navbar() {
 
   return (
     <>
-      <Nav className="navContainer" >
+      <Cont className="navContainer" >
         <Bars />
     
-        <NavMenu>
-          <NavLink to="/" style={
+        <Menu>
+          <Link to="/" style={
             {marginRight:"450px",
              color:"#ffba5a",
              marginLeft:"10px",
              fontSize:"2.6rem"}}
             >
             Sogy Hotel
-          </NavLink>
+          </Link>
+          
+          <NavHashLink>
+            <Link to = "../welcome/Welcome#welcome"  className={"navlink"} activeStyle>
+              About Us
+            </Link>
+          </NavHashLink>
+          
 
-          <NavLink to = {{pathname:"../welcome/Welcome#welcome"}}  className={"navlink"} activeStyle>
-            About Us
-          </NavLink>
-
-          <NavLink to='/room' className={"navlink"} activeStyle>
+          <Link to='/room' className={"navlink"} activeStyle>
             Rooms
-          </NavLink>
+          </Link>
 
-          <NavLink to='/reservations' className={"navlink"} activeStyle>
+          <Link to='/reservations' className={"navlink"} activeStyle>
             Reservations
-          </NavLink>
+          </Link>
 
-          <NavLink to='/contactUs'  className={"navlink"} activeStyle>
+          <Link to='/contactUs'  className={"navlink"} activeStyle>
             Contact Us
-          </NavLink>
+          </Link>
 
-        </NavMenu>
+        </Menu>
 
-      </Nav>
+      </Cont>
     </>
   )
 };

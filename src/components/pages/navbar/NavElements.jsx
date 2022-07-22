@@ -2,7 +2,7 @@ import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
   
-export const Nav = styled.nav`
+export const Cont = styled.nav`
   background: #212529;
   height: 70px;
   font-size: 2rem;
@@ -16,7 +16,7 @@ export const Nav = styled.nav`
  
 `;
   
-export const NavLink = styled(Link)`
+export const Link = styled(Link)`
   color: #808080;
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@ export const Bars = styled(FaBars)`
   }
 `;
   
-export const NavMenu = styled.div`
+export const Menu = styled.div`
   display: flex;
   align-items: right;
   margin-right: 0px;
