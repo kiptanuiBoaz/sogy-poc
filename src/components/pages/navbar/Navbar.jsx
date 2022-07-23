@@ -1,49 +1,4 @@
-// import React from "react";
-// import { Link ,Cont, Bars , Menu} from "./NavElements";
-// import { NavHashLink } from 'react-router-hash-link';
 
-
-// function Navbar() {
-
-
-//   return (
-//     <>
-//       <Cont className="navContainer" >
-//         <Bars />
-    
-//         <Menu>
-//           <Link to="/" 
-//             Sogy Hotel
-//           </Link>
-          
-//           <NavHashLink>
-//             <Link to = "../welcome/Welcome#welcome"  className={"navlink"} activeStyle>
-//               About Us
-//             </Link>
-//           </NavHashLink>
-          
-
-//           <Link to='/room' className={"navlink"} activeStyle>
-//             Rooms
-//           </Link>
-
-//           <Link to='/reservations' className={"navlink"} activeStyle>
-//             Reservations
-//           </Link>
-
-//           <Link to='/contactUs'  className={"navlink"} activeStyle>
-//             Contact Us
-//           </Link>
-
-//         </Menu>
-
-//       </Cont>
-//     </>
-//   )
-// };
-  
-// export default Navbar;
-  
 
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
@@ -52,8 +7,9 @@ import Container from 'react-bootstrap/Container';
 import {Link} from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
+
 function NavBar() {
-  const brand ={
+  const brand = {
     marginRight:"450px",
     color:"#ffba5a",
     marginLeft:"10px",

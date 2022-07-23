@@ -1,5 +1,4 @@
 import React , { useState, useEffect } from "react";
-import  NavRoutes from "../navbar/Navbar";
 import Homepage from "../homepage/Homepage";
 import Welcome from "../welcome/Welcome";
 import Footer from "../Footer";
@@ -9,7 +8,7 @@ import Photos from "../photosPage/Photos";
 import Events from "../events/events";
 import Menu from "../menu/Menu";
 import ContactUs from "../contactUs/ContactUs";
-
+import NavBar from "../navbar/Navbar";
 function Home (){
     
     //  monitor loading for loading animation
@@ -43,7 +42,7 @@ function Home (){
         }
         
         <div className="main-content">
-          <NavRoutes/>
+          <NavBar/>
           <Homepage />
           <Welcome />
           <Rooms />
