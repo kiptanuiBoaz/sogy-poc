@@ -6,10 +6,13 @@ import BookRoom from "./pages/bookRoom/BookRoom"
 
 function App() {
   return(<>
+
+  
     <Router>
+      
       <Routes>
-          <Route exact path ="/" component={Home} />
-          <Route exact path="/bookroom" component={BookRoom} />             
+          <Route  exact path ="/"   component={Home} />
+          <Route  path="/bookroom" component={BookRoom} />             
       </Routes>
     </Router>
   </>)

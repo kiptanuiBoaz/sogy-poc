@@ -8,7 +8,7 @@ import Photos from "../photosPage/Photos";
 import Events from "../events/events";
 import Menu from "../menu/Menu";
 import ContactUs from "../contactUs/ContactUs";
-import NavBar from "../navbar/Navbar";
+import NavBar from "../navbar/NavBar";
 function Home (){
     
     //  monitor loading for loading animation
