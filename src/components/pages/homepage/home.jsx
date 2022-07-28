@@ -1,4 +1,5 @@
 import React , { useState, useEffect,Fragment } from "react";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Homepage from "../homepage/Homepage";
 import Welcome from "../welcome/Welcome";
 import Footer from "../Footer";
@@ -43,16 +44,29 @@ function Home (){
         }
         
         <div className="main-content">
-          <NavBar/>
-          <Homepage />
-          <Welcome />
-          <Rooms />
-          <Photos />
-          <Menu />
-          <Events />
-          <Reserve />
-          <ContactUs />
-          <Footer /> 
+        <Router>
+          <Fragment>
+           <NavBar/>
+            <Routes>
+              <Route exact path ="/" component = {<Homepage/>}></Route>
+              <Route  path= "/welcome" component={Welcome}></Route>
+              <Route></Route>
+              <Route></Route>
+            </Routes>
+            
+             
+              
+              {/* <Rooms />
+              <Photos />
+              <Menu />
+              <Events />
+              <Reserve />
+              <ContactUs />
+              <Footer />  */}
+
+          </Fragment>
+          
+        </Router>
         </div>
       
       </div>
