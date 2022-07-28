@@ -1,9 +1,9 @@
 
 
 import React from "react";
-import { NavHashLink } from 'react-router-hash-link';
-import {HashLink } from "react-router-hash-link";
-import "../welcome/Welcome"
+import {Link} from 'react-router-dom';
+
+
 
 function NavBar() {
   const brand = {
@@ -16,8 +16,8 @@ function NavBar() {
    
   return (
       <>  
-
-        <NavHashLink to="/welcome/Welcome" >About Us</NavHashLink>
+        <Link to = "/bookroom">book room</Link>
+        {/* <NavHashLink to={"/welcome/Welcome#welcome"} >About Us</NavHashLink> */}
         {/* <HashLink to="/#Rooms" className="link"><Nav.Link href="#Rooms" className="link">Rooms</Nav.Link></HashLink>
         <Link to="/bookroom" className="link"><Nav.Link href="/bookroom" className="link">Reservations</Nav.Link></Link>
         <HashLink to="/#footer" className="link"><Nav.Link href="#footer" className="link">Contact Us</Nav.Link></HashLink> */}

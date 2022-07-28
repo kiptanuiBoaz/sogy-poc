@@ -1,4 +1,4 @@
-import React , { useState, useEffect } from "react";
+import React , { useState, useEffect,Fragment } from "react";
 import Homepage from "../homepage/Homepage";
 import Welcome from "../welcome/Welcome";
 import Footer from "../Footer";
@@ -28,7 +28,7 @@ function Home (){
 
 
   return (
-    <>
+    <Fragment>
       <div  >
         { loading &&
             <>
@@ -55,10 +55,9 @@ function Home (){
           <Footer /> 
         </div>
       
-
       </div>
      
-    </>
+    </Fragment>
   );
 }
 

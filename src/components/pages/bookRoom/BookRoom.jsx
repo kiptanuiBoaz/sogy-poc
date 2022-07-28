@@ -1,8 +1,10 @@
-import React from "react";
+import React,{Fragment} from "react";
 
 function BookRoom(){
     return(
-        <p>testng book room</p>
+        <Fragment>
+            <p>testng book room</p>
+        </Fragment>
     )
 }
 
