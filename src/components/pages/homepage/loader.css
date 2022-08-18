@@ -1,0 +1,31 @@
+/* Loading styling */
+    /* loader darkening the background */
+    .loader-container {
+        width: 100%;
+        height: 60cm;
+        z-index: 9;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.814);
+        background-size: cover;
+
+    }
+    /* spinning animation div */
+    .loader-spinner{
+        background: url("https://media.giphy.com/media/8agqybiK5LW8qrG3vJ/giphy.gif");
+        position:fixed;
+        z-index: 12;
+        width: 100%;
+        height: 60cm;
+        background-repeat: no-repeat;
+        background-position:top 60px center;
+        
+    }
+
+    /* initial loading of the website */
+    .page-loading{
+        
+        z-index: 9;
+        height: 20cm;
+        background-repeat:repeat;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0.711) ),url(https://images.squarespace-cdn.com/content/v1/58ff2140ff7c5003d9b4d5e3/1653525853176-FVU7VCVPXAU3NSW5CVVW/unsplash-image-rmUFInoS3iw.jpg?format=1000w);
+    }

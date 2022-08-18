@@ -1,7 +1,8 @@
 
 
 import React from "react";
-import {Link} from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link';
+import "./navbar.css"
 
 
 
@@ -17,10 +18,10 @@ function NavBar() {
   return (
       <>  
       
-        <Link to="/" >Sogy</Link> 
-        <Link to="/rooms">Rooms</Link>
-        <Link to="/welcome">Book Room</Link>
-        <Link to="/footer" >Contact Us</Link>
+        <HashLink to="/homepage/Homepage.jsx#homepage" >Sogy</HashLink> 
+        <HashLink to="/rooms">Rooms</HashLink>
+        {/* <Link to="/welcome">Book Room</Link>
+        <Link to="/footer" >Contact Us</Link> */}
            
       </>
   )

@@ -1,0 +1,130 @@
+/* welcome page styling  */
+.welcome{
+    background-color: #ebe8e5;
+    background-size: cover;
+    margin-top: -20px;
+    height: 30cm;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.welcome >div{
+    padding-top:30px;
+    margin-left: 8%;
+    margin-right: 8%;
+    
+}
+
+/* header of the .welcome and the rooms section */
+.rooms>div>h1, .welcome > div >h1, .photos> div> h1, menu>div>h1,  .eventsHeader>h1{
+    font-family:cursive;
+    font-size: 50px;
+    padding-top:40px;
+    
+    
+}
+
+.welcome>div>p, .rooms>div>p, .photos>div>p, .eventsHeader>p{
+    font-size: large;
+    padding-top: 15px ;
+    color: #545b61;
+    padding: 10px;
+    font-weight: 300;
+    font-family: cursive;
+}
+
+
+
+/* button inside the welcome page styling */
+.welcome-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  
+}
+/* the or word between buttons */
+.welcome-buttons > p{
+    font-style: italic;
+    font-size: 2rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+   
+}
+/* both butttons */
+.welcome-buttons >a{
+    color: white;
+    border-radius: 40px;
+    box-sizing: border-box;
+    border-width:10px; 
+    display: block;
+    height: 80px;
+    font-size: 1.7em;
+    padding: 4px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    width: 10em;
+    z-index: 2;
+    border: 2px solid #ffba5a;
+}
+
+/* the text inside the buttoms */
+.welcome-buttons>a>span{
+  margin:auto;
+  padding:auto;
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  background:transparent;
+  width: 100%;
+  font-style: italic;
+ 
+
+}
+
+.welcome-buttons>a:hover{
+    color:  #0e0e10;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #808080 0%, #ffba5a 100%);
+    border: transparent;
+}
+
+/* the first button  */
+.welcome-buttons >a:nth-child(1){
+    margin-left: 40px;
+    background-color: #ffba5a;
+    
+}
+
+.welcome-buttons>a:last-child{
+    float:right;
+    color: #fd8421;
+    margin-right: 40px
+    
+}
+/* the last button when hoverd */
+.welcome-buttons>a:last-child:hover{
+    color: #0e0e10;
+}
+
+
+
+/* photo college inside welcome page */
+.overlay-pic{
+    position:absolute;
+    left:65%;
+    top: 1400px;
+    border-radius: 50%;
+    height: 50%;
+    border: 20px  solid #ebe8e5;
+    
+}
+
+.mainPic{
+    box-shadow: 3px 5px 17px #7a848c;
+}

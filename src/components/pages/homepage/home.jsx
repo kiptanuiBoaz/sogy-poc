@@ -10,6 +10,7 @@ import Events from "../events/events";
 import Menu from "../menu/Menu";
 import ContactUs from "../contactUs/ContactUs";
 import NavBar from "../navbar/NavBar";
+import "./loader.css"
 
 function Home (){
     

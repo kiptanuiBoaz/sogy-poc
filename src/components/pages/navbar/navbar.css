@@ -1,0 +1,25 @@
+/* navbar style */
+
+   
+.navContainer{
+    position:fixed;
+    top: 0;
+    
+    width: 100%;
+    
+    
+}
+
+.navlink:hover{
+    color:#fd8421 ;
+}
+
+.hover-header:hover{
+    color:#fd8421 !important;
+    background-color: #0e0e10;
+}
+
+.navlink{
+    color: #808080;
+    padding-right: 0%;
+}

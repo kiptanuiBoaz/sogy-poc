@@ -4,12 +4,12 @@ import ReserveButton from "./ReserveButton";
 import Text from "./Text";
 import Typed from "react-typed";
 import Jump from 'react-reveal/Jump';
-
+import "./homepage.css"
 
 
 function Homepage() {
   return (
-    <div  className= "homepage">
+    <div  className= "homepage" id="homepage">
     
       <h2 className="welcomeText" style={{paddingTop:"130px"}}>WELCOME TO  5 <span style={{color:"#ffba5a"}}>&#9733;</span> &nbsp; HOTEL</h2>
       <Text
