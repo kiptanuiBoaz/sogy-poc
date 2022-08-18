@@ -5,6 +5,7 @@ import {BsGithub} from "react-icons/bs";
 import{ ImLinkedin} from "react-icons/im";
 import {BsFacebook} from "react-icons/bs";
 import {FaPhoneAlt} from "react-icons/fa";
+import "./footer.css"
 
 
 function Footer() {

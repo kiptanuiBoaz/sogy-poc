@@ -1,0 +1,42 @@
+
+/* footer styling */
+
+.footer{
+    background-color:#0e0e10;
+    color:#fff;
+    padding:30px;
+    font-size: 1.3rem;
+    ;
+}
+
+.footer>div>img{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.footer>div>a{
+    display: block;
+    margin: 15px;
+    color:#818c95;
+    text-decoration: none;
+}
+
+.footer>div>a:hover{
+  
+    color: blue
+    
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.topIcon{
+    color:#e8a952;
+    margin-top: 30px;
+}
+
+.restIcon{
+    color:#e8a952;
+}
