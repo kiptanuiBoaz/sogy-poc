@@ -1,6 +1,7 @@
 import React from "react";
 import Zoom from 'react-reveal/Zoom';
 import PhotosCard from "./PhotosCard";
+import "./photos.css"
 
 function Photos() {
   return (

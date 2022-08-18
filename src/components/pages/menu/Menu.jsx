@@ -4,6 +4,7 @@ import DynamicPage from "./DynamicPage";
 import mains from "./mains";
 import drinks from "./drinks";
 import desserts from "./desserts";
+import "./menu.css"
 
 
 function Menu() {

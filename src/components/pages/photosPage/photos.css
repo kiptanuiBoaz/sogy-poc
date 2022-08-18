@@ -1,0 +1,20 @@
+
+/* photos section styling */
+    /* photos containere */
+    .photos{
+        background-color: #ebe8e5;
+        padding-bottom:20px;
+    }
+
+    /* the p and h inside photos */
+    .photosContent {
+        justify-content: center;
+        width: 50%;
+        margin: 0px 25%;
+    }
+
+    .photosCorousel{
+        margin: 0px 10%;
+        margin-bottom: 20px;
+        
+    }

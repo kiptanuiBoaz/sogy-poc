@@ -3,7 +3,7 @@ import Roll from 'react-reveal/Roll';
 import Slide from 'react-reveal/Slide';
 import WelcomeButtons from "./welcomeButtons";
 import { Zoom } from "react-reveal";
-import "./welcome.css"
+import "welcome.css"
 
 
 function Welcome() {

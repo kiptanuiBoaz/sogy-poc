@@ -1,6 +1,7 @@
 import React from "react";
 import RoomCard from "./RoomsCard"
 import roomsList from "./roomsList"
+import "./rooms.css"
 
 
 
