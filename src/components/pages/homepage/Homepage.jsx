@@ -1,5 +1,4 @@
 import React from "react";
-// import "./Something.scss"
 import ReserveButton from "./ReserveButton";
 import Text from "./Text";
 import Typed from "react-typed";
