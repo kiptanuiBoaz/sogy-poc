@@ -1,4 +1,4 @@
-import React , { useState, useEffect } from "react";
+import React  from "react";
 import Welcome from "./pages/welcome/Welcome";
 import Footer from "./pages/footer/Footer";
 import Rooms from "./pages/rooms/Rooms";
@@ -15,20 +15,20 @@ const App = () =>{
 
   return (
     
-      <div className="main-content">
-        
-        <NavBar/>
-        <Homepage/>
-        <Rooms />
-        <Photos />
-        <Menu />
-        <Events />
-        <Welcome/>
-        <Reserve />
-        <ContactUs />
-        <Footer />  
-        
-      </div>
+    <div className="main-content">
+      
+      <NavBar/>
+      <Homepage/>
+      <Rooms />
+      <Photos />
+      <Menu />
+      <Events />
+      <Welcome/>
+      <Reserve />
+      <ContactUs />
+      <Footer />  
+      
+    </div>
      
   );
 }

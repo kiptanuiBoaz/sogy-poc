@@ -1,10 +1,8 @@
 
 import React from "react";
-import "./navbar.css"
+import "./navbar.css";
 
-
-
-function NavBar() {
+const NavBar = () => {
   const brand = {
     marginRight:"450px",
     color:"#ffba5a",
@@ -14,16 +12,16 @@ function NavBar() {
 
    
   return (
-      <>  
-        <ul>
-          <li className= {brand}>Sogy</li>
-          <li>Rooms</li>
-          <li>Book Room</li>
-          <li>Contact Us</li>
-        </ul>
+      
+    <ul>
+      <li className= {brand}>Sogy</li>
+      <li>Rooms</li>
+      <li>Book Room</li>
+      <li>Contact Us</li>
+    </ul>
  
            
-      </>
+     
   )
 }
 export default NavBar;
