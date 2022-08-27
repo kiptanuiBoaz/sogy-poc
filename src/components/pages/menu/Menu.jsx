@@ -5,79 +5,55 @@ import mains from "./mains";
 import drinks from "./drinks";
 import desserts from "./desserts";
 import "./menu.css"
+import MenuTexts from "./MenuTexts";
 
 
 const Menu = () => {
   // state to manage the type of food  currently active
-  const [foodCategory, setFoodCategory] = useState("mains");
+  const [foodCategory, setFoodCategory] = useState(1);
 
-  const setDrinksCategory = () =>{
-    setFoodCategory("drinks");
+  const titleArr = ["DESSERTS", "MAINS", "DRINKS"];
 
-  }
-
-  function setMainsCategory (){
-    setFoodCategory("mains");
-
-    
-  }
-
-  const setDessertsCategory = () =>{
-    setFoodCategory("desserts");
-
-  }
-
-  
   return(
     <div className="menu" >
     
-      <div className="menuTexts">
-        <h1>Our Resturant Menu</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ullam accusamus amet distinctio ratione ab voluptatum porro? Ut, dolores et officia distinctio suscipit omnis non, iusto rem natus autem cum!</p>
-      </div>
+      <MenuTexts/>
 
       <div className="buttonsContainer"  >
         
-        <MenuButtons 
-          title="MAINS" 
-          onClick={setMainsCategory} 
-          style={{color: foodCategory===mains && "red"}}
-
-        />
-
-        <MenuButtons 
-          title="DESSERTS"  
-          onClick={setDessertsCategory} 
-          style={{color: foodCategory===desserts && "red"}}
-        />
-
-        <MenuButtons 
-          title= "DRINKS"  
-          onClick={setDrinksCategory } 
-          style={{color: foodCategory===drinks && "red"}}
-
-        />
+        {titleArr.map(
+          (title,index)=>{
+            return(
+              <MenuButtons 
+                title= {title} 
+                onClick={()=>setFoodCategory(index)} 
+                style={{color: foodCategory===index && "red"}}
+              />
+            )
+           
+          }
+        )}
           
       </div>
 
       <div className="menuContent">
         {/* conditionally rendering the active subcategory */}
         {
-          foodCategory === "mains" && <DynamicPage 
+          foodCategory === 1 && <DynamicPage 
             array = {mains}
           />
         }
 
         {
 
-         foodCategory ==="drinks" && <DynamicPage 
+         foodCategory === 2 && <DynamicPage 
             array ={drinks}
          />
         }
 
         {
 
-          foodCategory ==="desserts" && <DynamicPage 
+          foodCategory === 0 && <DynamicPage 
             array ={desserts}
           />
         }
