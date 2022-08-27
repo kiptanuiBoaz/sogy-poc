@@ -16,7 +16,7 @@ const Menu = () => {
 
   return(
     <div className="menu" >
-    
+    got 
       <MenuTexts/>
 
       <div className="buttonsContainer"  >
