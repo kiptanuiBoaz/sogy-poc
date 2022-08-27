@@ -9,20 +9,11 @@ import "./menu.css"
 
 function Menu() {
   // state to manage the type of food  currently active
-  const [foodCategory, setFoodCategory] = useState("MAINS");
-  const buttonsArr = ["MAINS","DESSERTS","DRINKS"];
-  const[clicked, setClicked]= useState(false);
-    
-  function clickedSpan() {
-    setClicked(current => !current);
-  }
+  const [foodCategory, setFoodCategory] = useState("mains");
 
-  // setting the current state of active subcategory to the one currntly active
-  function handleClicked(title){
- 
-    setFoodCategory(title);
     
-  }
+  
+
 
   return (
     <div className="menu" >
@@ -33,42 +24,47 @@ function Menu() {
       </div>
 
       <div className="buttonsContainer"  >
-        {buttonsArr.map( (buttonsArr)=>{
-    
-          return(
-            <MenuButtons
-              title= {buttonsArr}
-              // pass the function so as to grab the active food subcategory
-              btnClick ={handleClicked}
-              spanClicked = {clickedSpan}
-              style={{
-                color: clicked ? 'red' : '',
-              }}
-              
-            />
-          )
+        
+        <MenuButtons 
+          title="MAINS" 
+          onClick={()=>setFoodCategory("mains")} 
+          style={{color: foodCategory===mains && "red"}}
 
-        })}
+        />
+
+        <MenuButtons 
+          title="DESSERTS"  
+          onClick={()=>setFoodCategory("desserts")} 
+          style={{color: foodCategory===desserts && "red"}}
+        />
+
+        <MenuButtons 
+          title= "DRINKS"  
+          onClick={()=>setFoodCategory("drinks") } 
+          style={{color: foodCategory===drinks && "red"}}
+
+        />
+          
       </div>
 
       <div className="menuContent">
         {/* conditionally rendering the active subcategory */}
         {
-          foodCategory === "MAINS" && <DynamicPage 
+          foodCategory === "mains" && <DynamicPage 
             array = {mains}
           />
         }
 
         {
 
-         foodCategory ==="DRINKS" && <DynamicPage 
+         foodCategory ==="drinks" && <DynamicPage 
             array ={drinks}
          />
         }
 
         {
 
-          foodCategory ==="DESSERTS" && <DynamicPage 
+          foodCategory ==="desserts" && <DynamicPage 
             array ={desserts}
           />
         }
