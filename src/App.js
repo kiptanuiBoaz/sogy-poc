@@ -5,7 +5,7 @@ import Rooms from "./components/pages/rooms/Rooms";
 import Reserve from "./components/pages/reserve/Reserve";
 import Photos from "./components/pages/photosPage/Photos";
 import Events from "./components/pages/events/EventContainer";
-// import Menu from "./components/pages/menu/Menu";
+import Menu from "./components/pages/menu/Menu";
 import ContactUs from "./components/pages/contactUs/ContactUs";
 import NavBar from "./components/pages/navbar/NavBar";
 import Homepage from "./components/pages/homepage/Homepage";
@@ -22,21 +22,12 @@ const App = () =>{
       
       <Rooms />
       <Photos />
-      
+      <Menu /> 
       <Events />
       <Reserve />
       <ContactUs />
       <Footer /> 
      
-     
-   
-{/*       
-        <Menu /> 
-     
-    
-      
-       */}
-      
     </div>
      
   );
