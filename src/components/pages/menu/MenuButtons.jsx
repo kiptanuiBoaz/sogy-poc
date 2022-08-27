@@ -7,7 +7,7 @@ function  MenuButtons(props){
         <div>
             <button>{props.title}</button>
         </div>
-       
+         
     )
 };
 

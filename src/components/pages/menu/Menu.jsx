@@ -7,15 +7,28 @@ import desserts from "./desserts";
 import "./menu.css"
 
 
-function Menu() {
+const Menu = () => {
   // state to manage the type of food  currently active
   const [foodCategory, setFoodCategory] = useState("mains");
 
+  const setDrinksCategory = () =>{
+    setFoodCategory("drinks");
+
+  }
+
+  function setMainsCategory (){
+    setFoodCategory("mains");
+
     
+  }
+
+  const setDessertsCategory = () =>{
+    setFoodCategory("desserts");
+
+  }
+
   
-
-
-  return (
+  return(
     <div className="menu" >
     
       <div className="menuTexts">
@@ -27,20 +40,20 @@ function Menu() {
         
         <MenuButtons 
           title="MAINS" 
-          onClick={()=>setFoodCategory("mains")} 
+          onClick={setMainsCategory} 
           style={{color: foodCategory===mains && "red"}}
 
         />
 
         <MenuButtons 
           title="DESSERTS"  
-          onClick={()=>setFoodCategory("desserts")} 
+          onClick={setDessertsCategory} 
           style={{color: foodCategory===desserts && "red"}}
         />
 
         <MenuButtons 
           title= "DRINKS"  
-          onClick={()=>setFoodCategory("drinks") } 
+          onClick={setDrinksCategory } 
           style={{color: foodCategory===drinks && "red"}}
 
         />
