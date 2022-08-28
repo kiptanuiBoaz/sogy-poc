@@ -14,9 +14,15 @@ const Menu = () => {
 
   const titleArr = ["DESSERTS", "MAINS", "DRINKS"];
 
+  const setCategory = (index) =>{
+    setFoodCategory(index);
+     console.log(index);
+   
+  }
+
   return(
     <div className="menu" >
-    got 
+    
       <MenuTexts/>
 
       <div className="buttonsContainer"  >
@@ -26,7 +32,7 @@ const Menu = () => {
             return(
               <MenuButtons 
                 title= {title} 
-                onClick={()=>setFoodCategory(index)} 
+                onClick={()=>setCategory()} 
                 style={{color: foodCategory===index && "red"}}
               />
             )
