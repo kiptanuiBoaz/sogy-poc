@@ -16,7 +16,6 @@ const Menu = () => {
 
   const setCategory = (index) =>{
     setFoodCategory(index);
-     console.log(index);
    
   }
 
@@ -30,10 +29,13 @@ const Menu = () => {
         {titleArr.map(
           (title,index)=>{
             return(
+
               <MenuButtons 
                 title= {title} 
-                onClick={()=>setCategory()} 
-                style={{color: foodCategory===index && "red"}}
+                setClick={setCategory} 
+                index = {index}
+                foodCategory= {foodCategory}
+                
               />
             )
            
@@ -53,7 +55,7 @@ const Menu = () => {
         {
 
          foodCategory === 2 && <DynamicPage 
-            array ={drinks}
+            array ={drinks} 
          />
         }
 
