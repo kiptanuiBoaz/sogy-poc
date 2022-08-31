@@ -5,7 +5,7 @@ import "./rooms.css"
 
 
 
-function Rooms() {
+export const Rooms = () => {
     return (
       <section name="rooms"  className= {"rooms"}>
         <div>
@@ -36,4 +36,3 @@ function Rooms() {
     )
 };
   
-export default Rooms;

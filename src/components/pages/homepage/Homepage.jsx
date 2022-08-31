@@ -6,7 +6,7 @@ import Jump from 'react-reveal/Jump';
 import "./homepage.css"
 
 
-const  Homepage = ()=> {
+export const  Homepage = ()=> {
   return (
     <div  className= "homepage" name="/">
     
@@ -15,26 +15,25 @@ const  Homepage = ()=> {
       <Typed 
         className="typing-effect"
         strings ={[
-                  "Make yourself comfortable. We make your comfort our priority",
-                  "Spend your vacation here with us, we'll make it woth your stay.",
-                  "This is home away from home."
-                  ]}
+          "Make yourself comfortable. We make your comfort our priority",
+          "Spend your vacation here with us, we'll make it woth your stay",
+          "This is home away from home"
+        ]}
         typeSpeed={60}
         backSpeed={50}
         startDelay={ 2000}
         loop 
       />
+      
       <Text text = "Eat well rest, well with us!"/>
+
       <Jump delay= {1500} count={20}>
-        {<ReserveButton
-          text={"Reserve Now"}
-        />}
+        {<ReserveButton text= {"Reserve Now"} />}
       </Jump>
       
     </div>
   )
 };
   
-export default Homepage;
 
 

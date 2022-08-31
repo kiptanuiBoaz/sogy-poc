@@ -8,7 +8,7 @@ import {FaPhoneAlt} from "react-icons/fa";
 import "./footer.css"
 
 
-function Footer() {
+export const  Footer = () => {
     return (
       <section className="footer" tooltip="This is the developer info row">
         <div>
@@ -29,4 +29,3 @@ function Footer() {
     )
 };
   
-export default Footer;

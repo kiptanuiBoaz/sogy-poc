@@ -3,18 +3,13 @@ import EventsPage from "./EventsPage";
 import EventsHeader from "./EventsHeader";
 import "./events.css"
 
-function EventContainer(){
+export const  Events = () => {
     return(
         <section className="eventsContainer">
             <div>
                 <EventsHeader/>
                 <EventsPage/>
             </div>
-            
-
         </section>
     )
-
 }
-
-export default EventContainer;

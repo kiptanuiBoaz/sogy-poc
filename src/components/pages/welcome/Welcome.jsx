@@ -6,7 +6,7 @@ import { Zoom } from "react-reveal";
 import "./welcome.css"
 
 
-function Welcome() {
+export const Welcome = () => {
   return (
     <section id="welcome" name="aboutUs"  className="welcome">
 
@@ -15,7 +15,7 @@ function Welcome() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula semper nunc ut consectetur. Ut ullamcorper leo sit amet tellus pharetra cursus. In diam erat, hendrerit a malesuada suscipit, posuere sit amet leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
         
         <Slide duration={1500} right>
-        <img className="mainPic" src={"https://preview.colorlib.com/theme/sogo/images/img_1.jpg"}   alt={"a bed and bed lamp"}></img>
+          <img className="mainPic" src={"https://preview.colorlib.com/theme/sogo/images/img_1.jpg"}   alt={"a bed and bed lamp"}></img>
         </Slide>
         
         <Roll duration={1500} left>
@@ -26,11 +26,8 @@ function Welcome() {
           <WelcomeButtons/>
         </Zoom>
           
-       
-        
       </div>
     </section>
   )
 };
   
-export default Welcome;

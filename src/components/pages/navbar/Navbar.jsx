@@ -4,7 +4,7 @@ import "./navbar.css";
 import {Link} from "react-scroll";
 import {Link as RouterLink } from "react-router-dom";
 
-const NavBar = () => {
+export const NavBar = () => {
   const brand = {
     marginRight:"450px",
     color:"#ffba5a",
@@ -12,7 +12,6 @@ const NavBar = () => {
     fontSize:"2.6rem"
   }
 
-   
   return (
     <>
       <div>
@@ -40,4 +39,3 @@ const NavBar = () => {
    
   )
 }
-export default NavBar;

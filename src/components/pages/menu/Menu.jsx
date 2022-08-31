@@ -8,7 +8,7 @@ import "./menu.css"
 import MenuTexts from "./MenuTexts";
 
 
-const Menu = () => {
+export const Menu = () => {
   // state to manage the type of food  currently active
   const [foodCategory, setFoodCategory] = useState(1);
 
@@ -38,7 +38,6 @@ const Menu = () => {
                 
               />
             )
-           
           }
         )}
           
@@ -46,25 +45,11 @@ const Menu = () => {
 
       <div className="menuContent">
         {/* conditionally rendering the active subcategory */}
-        {
-          foodCategory === 1 && <DynamicPage 
-            array = {mains}
-          />
-        }
+        { foodCategory === 1 && <DynamicPage array = {mains} /> }
 
-        {
+        { foodCategory === 2 && <DynamicPage array = {drinks} />}
 
-         foodCategory === 2 && <DynamicPage 
-            array ={drinks} 
-         />
-        }
-
-        {
-
-          foodCategory === 0 && <DynamicPage 
-            array ={desserts}
-          />
-        }
+        { foodCategory === 0 && <DynamicPage array ={desserts}/>}
         
       </div>
       
@@ -72,4 +57,3 @@ const Menu = () => {
   )
 };
   
-export default Menu;

@@ -3,7 +3,7 @@ import Zoom from 'react-reveal/Zoom';
 import PhotosCard from "./PhotosCard";
 import "./photos.css"
 
-function Photos() {
+export const  Photos = () => {
   return (
     <section className="photos">
       <div className="photosContent">
@@ -23,4 +23,3 @@ function Photos() {
       
 };
   
-export default Photos;

@@ -6,14 +6,13 @@ import Recommendation from "./Recommendation";
 import "./reserve.css"
 
 
-function Rooms() {
+export const Reserve = () => {
     return (
       <section className="reserve">
-       <Recommendation/>
-       <Additionals/>
+        <Recommendation/>
+        <Additionals/>
         <RButton/>
       </section>
     )
 };
   
-export default Rooms;

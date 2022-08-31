@@ -3,7 +3,7 @@ import UsefuLinks from "./UsefuLinks";
 import ContactInfo from "./ContactInfo";
 import "./contactUs.css"
 
-function ContactUs() {
+export const ContactUs = () => {
     return (
       <section name="contactUs" className="contactUs">
         <UsefuLinks/>
@@ -12,4 +12,3 @@ function ContactUs() {
     )
 };
   
-export default ContactUs;
