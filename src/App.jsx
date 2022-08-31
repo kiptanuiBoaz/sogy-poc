@@ -9,6 +9,8 @@ import Menu from "./components/pages/menu/Menu";
 import ContactUs from "./components/pages/contactUs/ContactUs";
 import NavBar from "./components/pages/navbar/NavBar";
 import Homepage from "./components/pages/homepage/Homepage";
+import {BookRoom} from "./components/pages/bookRoom/BookRoom";
+import {Route, Routes} from "react-router-dom";
 // import "./loader.css"
 
 const App = () =>{
@@ -19,7 +21,6 @@ const App = () =>{
       <NavBar/>
       <Homepage/>
       <Welcome/>
-      
       <Rooms />
       <Photos />
       <Menu /> 
@@ -27,6 +28,7 @@ const App = () =>{
       <Reserve />
       <ContactUs />
       <Footer /> 
+      <Routes><Route path="/bookRoom" element={<BookRoom/>} /></Routes>
      
     </div>
      

@@ -8,7 +8,7 @@ import "./homepage.css"
 
 const  Homepage = ()=> {
   return (
-    <div  className= "homepage">
+    <div  className= "homepage" name="/">
     
       <h2 className="welcomeText" style={{paddingTop:"130px"}}>WELCOME TO  5 <span style={{color:"#ffba5a"}}>&#9733;</span> &nbsp; HOTEL</h2>
       <Text text="We make the most memorabe stay here"/>

@@ -5,7 +5,7 @@ import "./contactUs.css"
 
 function ContactUs() {
     return (
-      <section  className="contactUs">
+      <section name="contactUs" className="contactUs">
         <UsefuLinks/>
         <ContactInfo/>
       </section>

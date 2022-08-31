@@ -8,7 +8,7 @@ import "./welcome.css"
 
 function Welcome() {
   return (
-    <section id="welcome"  className="welcome">
+    <section id="welcome" name="aboutUs"  className="welcome">
 
       <div>
         <h1>Welcome!</h1>
