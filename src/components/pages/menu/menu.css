@@ -10,6 +10,7 @@
     }
 
     /* the description in the menu */
+    /* the p and h atop of the menu */
     .menu>div>p{
         color:#fff;
         font-size: large;
@@ -20,12 +21,6 @@
         margin: 0px 40px ;
         
     }
-    /* the p and h atop of the menu */
-
-    .menu>.menuTexts{
-        width: 60%;
-        margin: 0 auto ;
-    }
 
     /* the title */
     .menu>div>h1{
@@ -34,6 +29,14 @@
         font-family: cursive;
         margin-top: -20px;
     }
+  
+
+    .menu>.menuTexts{
+        width: 60%;
+        margin: 0 auto ;
+    }
+
+   
 
     /* the buttons container */
     .buttonsContainer{
@@ -76,7 +79,7 @@
         transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
     }
     /* the container holding the menuItems */
-    .menuContent{
+    .menu-content{
         color:rgba(240, 239, 239, 0.746);
         width: 90%;
         margin:auto;
@@ -85,35 +88,35 @@
        
     }
 
-    .menuContent>div>div:hover{
+    .menu-content-dynamic:hover{
         color:#fff;
     }
 
-    .menuContent >div{
+    .menu-content-dynamic{
         display: flex;
         flex-wrap: wrap;
        
         
     }
 
-    .menuContent >div>div{
+    .menu-content-dynamic{
         width:50%;
         margin-bottom: 40px;
         
     }
 
-    .menuContent>div>div>h2{
+    .menu-content-dynamic>h2{
         font-size: 2rem;
     }
 
-    .menuContent>div>div>h3{
+    .menu-content-dynamic>h3{
         font-size: 1.8rem;
         font-family: monospace;
         color:#ffba5a;
         font-weight: 200;
     }
 
-    .menuContent>div>div>p{
+    .menu-content-dynamic>p{
         width:80%;
         margin:auto;
         font-size: 1.4rem;

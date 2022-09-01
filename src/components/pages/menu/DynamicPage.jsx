@@ -1,4 +1,5 @@
 import React from "react";
+import "./menu.css";
 
 
 const DynamicPage = (props) =>{
@@ -7,14 +8,14 @@ const DynamicPage = (props) =>{
 
     return(
         /* replicating a div for each item on the menu */
-        data.map((data)=>{
+        data.map((datum)=>{
             /* destructuring the data array */
-            const {price: mainPrice, mainDish: dishName, description: foodDescription} = data;
+            const {price: mainPrice, mainDish: dishName, description: foodDescription} = datum;
         
         // eslint-disable-next-line
         /* rendering the contents of the object containing menu items */
             return(
-                <div>
+                <div className="menu-content-dynamic">
             
                     <h3>{mainPrice}</h3>
                     <h2>{dishName}</h2>

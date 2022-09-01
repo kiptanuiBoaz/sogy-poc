@@ -6,6 +6,7 @@ import drinks from "../../assets/drinks";
 import desserts from "../../assets/desserts";
 import "./menu.css"
 import MenuTexts from "./MenuTexts";
+import "../welcome/welcome.css"
 
 
 export const Menu = () => {
@@ -14,6 +15,7 @@ export const Menu = () => {
 
   const titleArr = ["DESSERTS", "MAINS", "DRINKS"];
 
+  //setting the value of the useState to the current index
   const setCategory = (index) =>{
     setFoodCategory(index);
    
@@ -43,7 +45,7 @@ export const Menu = () => {
           
       </div>
 
-      <div className="menuContent">
+      <div className="menu-content">
         {/* conditionally rendering the active subcategory */}
         { foodCategory === 1 && <DynamicPage array = {mains} /> }
 

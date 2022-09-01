@@ -15,7 +15,7 @@
 }
 
 /* header of the .welcome and the rooms section */
-.rooms>div>h1, .welcome > div >h1, .photos> div> h1, menu>div>h1,  .eventsHeader>h1{
+.rooms>div>h1, .welcome > div >h1, .photos> div> h1, .menu>div>h1,  .eventsHeader>h1{
     font-family:cursive;
     font-size: 50px;
     padding-top:40px;
