@@ -5,7 +5,7 @@ import "./rooms.css"
 
 
 
-export const Roomsy
+export const Rooms
  = () => {
     return (
       <section name="rooms"  className= {"rooms"}>
