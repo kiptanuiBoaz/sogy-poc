@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "./Link";
-import links from "./links";
+import links from "../../assets/links";
 import SignUpForm from "./SignUpForm"
 import Fade from 'react-reveal/Fade';
 

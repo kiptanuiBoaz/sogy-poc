@@ -1,11 +1,12 @@
 import React from "react";
 import RoomCard from "./RoomsCard"
-import roomsList from "./roomsList"
+import roomsList from "../../assets/roomsList"
 import "./rooms.css"
 
 
 
-export const Rooms = () => {
+export const Roomsy
+ = () => {
     return (
       <section name="rooms"  className= {"rooms"}>
         <div>

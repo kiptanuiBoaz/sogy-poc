@@ -1,5 +1,5 @@
 import React from "react";
-import events from "./events";
+import events from "../../assets/events";
 import Fade from 'react-reveal/Fade';
 
 function EventsPage() {

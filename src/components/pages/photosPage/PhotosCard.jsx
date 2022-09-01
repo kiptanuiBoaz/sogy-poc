@@ -1,5 +1,5 @@
 import React from "react";
-import photoList from "./photoList";
+import photoList from "../../assets/photoList";
 import { Carousel } from 'react-carousel-minimal';
 
 

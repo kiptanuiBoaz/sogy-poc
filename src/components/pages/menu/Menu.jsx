@@ -1,9 +1,9 @@
 import React , {useState} from "react";
 import MenuButtons from "./MenuButtons";
 import DynamicPage from "./DynamicPage";
-import mains from "./mains";
-import drinks from "./drinks";
-import desserts from "./desserts";
+import mains from "../../assets/mains";
+import drinks from "../../assets/drinks";
+import desserts from "../../assets/desserts";
 import "./menu.css"
 import MenuTexts from "./MenuTexts";
 
