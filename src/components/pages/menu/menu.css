@@ -23,7 +23,7 @@
     }
 
     /* the title */
-    .menu>div>h1{
+    .menu-texts>h1{
         color:#fff;
         padding-top:40px;
         font-family: cursive;
@@ -31,7 +31,7 @@
     }
   
 
-    .menu>.menuTexts{
+    .menu-texts{
         width: 60%;
         margin: 0 auto ;
     }
@@ -95,7 +95,6 @@
     .menu-content-dynamic{
         display: flex;
         flex-wrap: wrap;
-       
         
     }
 
@@ -114,6 +113,7 @@
         font-family: monospace;
         color:#ffba5a;
         font-weight: 200;
+        display: block;
     }
 
     .menu-content-dynamic>p{

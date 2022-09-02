@@ -5,7 +5,7 @@ import mains from "../../assets/mains";
 import drinks from "../../assets/drinks";
 import desserts from "../../assets/desserts";
 import "./menu.css"
-import MenuTexts from "./MenuTexts";
+import {MenuTexts} from "./MenuTexts";
 import "../welcome/welcome.css"
 
 

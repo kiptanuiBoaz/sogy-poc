@@ -12,8 +12,8 @@ const DynamicPage = (props) =>{
             /* destructuring the data array */
             const {price: mainPrice, mainDish: dishName, description: foodDescription} = datum;
         
-        // eslint-disable-next-line
-        /* rendering the contents of the object containing menu items */
+           // eslint-disable-next-line
+           /* rendering the contents of the object containing menu items */
             return(
                 <div className="menu-content-dynamic">
             
