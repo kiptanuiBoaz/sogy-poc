@@ -1,8 +1,7 @@
 
 import React from "react";
 import "./navbar.css";
-import {Link} from "react-scroll";
-import {Link as RouterLink } from "react-router-dom";
+import { Cont, NavLink, RouteLink, Bars, Menu } from "./NavElements";
 
 export const NavBar = () => {
   const brand = {
@@ -13,29 +12,24 @@ export const NavBar = () => {
   }
 
   return (
-    <>
-      <div>
-        <p className="brand">
-          <Link to={"/"} spy ={true} activeClass="" smooth= {true} offset={0}>Sogy</Link>
-        </p>
-      </div>
+    <Cont>
 
-      <ul>
+      <NavLink to={"/"} spy ={true} activeClass="" smooth= {true} offset={0}>Sogy</NavLink>
+
+      <Menu>
+        
+        <NavLink to={"/"} spy={true} activeClass=""  smooth={true} offset={0} duration={1000}>Home</NavLink>
+      
+        <NavLink to={"rooms"} spy={true} activeClass=""  smooth={true} offset={0} duration={1000}>Rooms</NavLink>
+      
+        <RouteLink to="/bookRoom">Book Room</RouteLink>
+      
+        <NavLink to={"contactUs"} spy={true} activeClass=""  smooth={true} offset={0} duration={1000}>Contact Us</NavLink>
        
-        <li>
-          <Link to={"aboutUS"} spy={true} activeClass=""  smooth={true} offset={0} duration={1000}>Home</Link>
-        </li>
-        <li>
-          <Link to={"rooms"} spy={true} activeClass=""  smooth={true} offset={0} duration={1000}>Rooms</Link>
-        </li>
-        <li>
-          <RouterLink to="/bookRoom">Book Room</RouterLink>
-        </li>
-        <li>
-          <Link to={"contactUs"} spy={true} activeClass=""  smooth={true} offset={0} duration={1000}>Contact Us</Link>
-        </li>
-      </ul>
-    </>
+      </Menu>
+      <Bars/>
+      
+    </Cont>
    
   )
 }

@@ -1,7 +1,9 @@
 import { FaBars } from 'react-icons/fa';
-import { NavLink as Link } from 'react-router-dom';
+import {Link} from "react-scroll";
+import {Link as RouterLink } from "react-router-dom";
 import styled from 'styled-components';
   
+// the engulfing container
 export const Cont = styled.nav`
   background: #212529;
   height: 70px;
@@ -12,11 +14,29 @@ export const Cont = styled.nav`
   z-index: 12;
   padding:5px;
   left: 0px;
+  position:fixed;
+  width: 100%;
   
- 
 `;
   
-export const Link = styled(Link)`
+// from react smooth scroll
+export const NavLink = styled(Link)`
+  color: #808080;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  &.active {
+    color: #ffba5a;
+    background:  #212529;
+  }
+  
+`;
+
+// from react-router-dom
+export const RouteLink = styled(RouterLink)`
   color: #808080;
   display: flex;
   align-items: center;
@@ -31,27 +51,29 @@ export const Link = styled(Link)`
   
 `;
   
+// humburger menu icon
 export const Bars = styled(FaBars)`
   display: none;
   color: #808080;
   @media screen and (max-width: 768px) {
     display: block;
-    position: absolute;
+    ${'' /* position: absolute
     top: 0;
-    right: 10;
+    right: 20; */}
+
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
   }
 `;
   
+// the container of the links
 export const Menu = styled.div`
   display: flex;
-  align-items: right;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-left:0px;
-  padding-right:0px;
+  justify-content: right;
+  width:100%;
+  padding-right:40px;
+ 
 
   @media screen and (max-width: 768px) {
     display: none;
