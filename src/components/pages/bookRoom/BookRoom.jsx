@@ -4,6 +4,7 @@ import "./bookRoom.css"
 export const BookRoom = () => {
     return(
         <>
+        
             <form className="room-form">
                 <label>Name</label>
                 <input type="text"/>
