@@ -22,7 +22,7 @@ export const NavBar = () => {
       
         <NavLink to={"rooms"} spy={true} activeClass=""  smooth={true} offset={0} duration={1000}>Rooms</NavLink>
       
-        <RouteLink to="/bookRoom">Book Room</RouteLink>
+        <RouteLink to="/reservations" spy={true} activeClass="" smooth={true} offset>Reservations</RouteLink>
       
         <NavLink to={"contactUs"} spy={true} activeClass=""  smooth={true} offset={0} duration={1000}>Contact Us</NavLink>
        

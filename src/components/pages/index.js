@@ -8,4 +8,4 @@ export {Menu}  from "./menu/Menu";
 export {ContactUs}  from "./contactUs/ContactUs";
 export {NavBar} from "./navbar/NavBar";
 export {Homepage}  from "./homepage/Homepage";
-export {BookRoom} from "./bookRoom/BookRoom";
+export {Reservations} from "./bookRoom/Reservations";
