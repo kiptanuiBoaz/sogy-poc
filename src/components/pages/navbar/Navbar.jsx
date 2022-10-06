@@ -4,6 +4,7 @@ import "./navbar.css";
 import { Cont, NavLink, RouteLink, Bars, Menu } from "./NavElements";
 
 export const NavBar = () => {
+   // eslint-disable-next-line
   const brand = {
     marginRight:"450px",
     color:"#ffba5a",
