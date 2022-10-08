@@ -1,6 +1,7 @@
 import React ,{useState} from "react";
 import "./reservation-styles/reservation.css";
 import { Input } from "./Input";
+import axios from "axios";
 // import {NavBar} from "../navbar/NavBar"
 // import {Footer} from "../footer/Footer"
 
@@ -22,7 +23,7 @@ export const Reservations = () => {
 
     const formSubmit  = (e) => {
         // prevent the refreshing of the page as native button behavior
-        e.preventDefault(); 
+        // e.preventDefault(); 
         postUserData();
     }
 
@@ -33,7 +34,7 @@ export const Reservations = () => {
             // performed asychronously
             const res = await axios({
                 method: 'POST',
-                url:"http://localhost:5000/user",
+                url:"http://localhost:8080/customers",
                 data: user,
 
             })
@@ -45,10 +46,12 @@ export const Reservations = () => {
         catch (error) {
             // handles returnd error from api incase of any
             setUserError(error)
-            console.log(taxError)
+            console.log(userError)
         }
     }
+    
 
+  
     return(
         <section className="reservations">
 
@@ -68,7 +71,7 @@ export const Reservations = () => {
                 <Input onChange = { e => setNoChildren(e.target.value)}  name= "Children" className= "people-input" type= "number"/>
                 <Input onChange = { e => { e.target.value === "on" && setPet(true)}} type="checkbox"  name="Will you be bringing pets?" className="switch"/>
                 
-                <button onClick={(e) =>{formSubmit()}}>Reserve now</button>
+                <button onClick={(e) =>{formSubmit(); e.preventDefault(); }}>Reserve now</button>
             
             </form>
 
