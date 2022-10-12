@@ -1,0 +1,95 @@
+.homepage{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0.711) ),
+    url("https://images.squarespace-cdn.com/content/v1/58ff2140ff7c5003d9b4d5e3/1653525853176-FVU7VCVPXAU3NSW5CVVW/unsplash-image-rmUFInoS3iw.jpg?format=1000w");
+    height: 20cm;
+    margin-top: -20px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+    .welcomeText{
+        color:white;
+        top: 150px;
+        position: relative;
+        font-family: cursive;
+    }
+
+    .typing-effect{
+        color:#fff;
+        font-size: 13mm;
+        font-weight: bold;
+        top:90px;
+        position: relative;
+        
+    }
+
+    p{    
+        color: white;
+        font-size: 11mm;
+        top:100px;
+       
+    }
+
+    .fourth-text{
+        margin-top: 15px;
+        position: relative;
+    }
+
+    .bn31 {
+        color: white;
+        border-radius: 40px;
+        box-sizing: border-box;
+        border-width:10px; 
+        display: block;
+        height: 70px;
+        font-size: 1.9em;
+        position: relative; 
+        text-decoration: none;
+        width: fit-content;
+        z-index: 2;
+        margin: auto;
+        border: 2px solid #ffba5a;
+        top: 100px;
+        align-items: center;
+        background: #0e0e10;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        transition: background 0.5s ease;
+        background:transparent;
+        width: 100%;
+
+        &:hover{
+            background: transparent;
+            color:  #0e0e10;
+            font-weight: 600;
+            background-image: linear-gradient(to right, #808080 0%, #ffba5a 100%);
+            border: transparent;
+        }
+
+        .bn31span{
+            align-items: center;
+            background: #0e0e10;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            transition: background 0.5s ease;
+            background:transparent;
+            width: 100%;
+            margin: -3px 50px 0px auto;
+            background: transparent;
+
+            &:hover{
+                &::after{
+                    content: " \00bb";
+                }
+            } 
+        }
+    }
+
+}

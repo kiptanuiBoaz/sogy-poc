@@ -3,7 +3,7 @@ import ReserveButton from "./ReserveButton";
 import Text from "./Text";
 import Typed from "react-typed";
 import Jump from 'react-reveal/Jump';
-import "./homepage.css"
+import "./home_page_styles/homePage.css";
 
 
 export const  Homepage = ()=> {
@@ -25,7 +25,7 @@ export const  Homepage = ()=> {
         loop 
       />
       
-      <Text text = "Eat well rest, well with us!"/>
+      <Text className="fourth-text" text = "Eat well rest, well with us!"/>
 
       <Jump delay= {1500} count={20}>
         {<ReserveButton text= {"Reserve Now"} />}
