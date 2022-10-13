@@ -1,7 +1,9 @@
+$breakpoint-mobile: 600px;
+
 .homepage{
     background-image:linear-gradient( rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0.711) ),
     url("https://images.squarespace-cdn.com/content/v1/58ff2140ff7c5003d9b4d5e3/1653525853176-FVU7VCVPXAU3NSW5CVVW/unsplash-image-rmUFInoS3iw.jpg?format=1000w");
-    height: 20cm;
+    height: max-content;
     margin-top: -20px;
     background-attachment: fixed;
     background-position: center;
@@ -9,26 +11,44 @@
     background-position: center;
     background-size: cover;
     width: 100%;
+    
+
+    @media (min-width: $breakpoint-mobile){
+        padding: 30px;
+        height: 800px;
+    }
 
     .welcomeText{
         color:white;
         top: 150px;
-        position: relative;
+        // position: relative;
         font-family: cursive;
+
+        @media (min-width: $breakpoint-mobile){
+            margin-top:270px;
+            font-size:30px;
+        }
+
+
     }
 
     .typing-effect{
         color:#fff;
-        font-size: 13mm;
+        font-size: 25px;
         font-weight: bold;
-        top:90px;
-        position: relative;
+        // top:90px;
+        // position: relative;
+
+        @media (min-width: $breakpoint-mobile){
+            top:60px;
+            font-size:20px;
+        }
         
     }
 
     p{    
         color: white;
-        font-size: 11mm;
+        font-size: 17px;
         top:100px;
        
     }
@@ -46,22 +66,18 @@
         display: block;
         height: 70px;
         font-size: 1.9em;
-        position: relative; 
         text-decoration: none;
         width: fit-content;
         z-index: 2;
-        margin: auto;
+        margin: 60px auto 40px;
         border: 2px solid #ffba5a;
-        top: 100px;
         align-items: center;
         background: #0e0e10;
         border-radius: 40px;
         display: flex;
         justify-content: center;
-        height: 100%;
         transition: background 0.5s ease;
         background:transparent;
-        width: 100%;
 
         &:hover{
             background: transparent;
@@ -81,7 +97,7 @@
             transition: background 0.5s ease;
             background:transparent;
             width: 100%;
-            margin: -3px 50px 0px auto;
+            margin: auto 20px;
             background: transparent;
 
             &:hover{

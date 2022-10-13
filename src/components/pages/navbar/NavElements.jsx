@@ -1,4 +1,5 @@
 import { FaBars } from 'react-icons/fa';
+import {ImCross} from "react-icons/im";
 import {Link} from "react-scroll";
 import {Link as RouterLink } from "react-router-dom";
 import styled from 'styled-components';
@@ -8,14 +9,16 @@ export const Cont = styled.nav`
   background: #212529;
   height: 70px;
   font-size: 2rem;
-  width:100%;
   display: flex;
   justify-content: left;
   z-index: 12;
   padding:5px;
-  left: 0px;
   position:fixed;
   width: 100%;
+ 
+  @media screen and (max-width: 768px) {
+    ${'' /* width: 768px; */}
+  }
   
 `;
   
@@ -28,6 +31,8 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  margin-top: 10px;
+ 
   &.active {
     color: #ffba5a;
     background:  #212529;
@@ -55,17 +60,19 @@ export const RouteLink = styled(RouterLink)`
 export const Bars = styled(FaBars)`
   display: none;
   color: #808080;
+
   @media screen and (max-width: 768px) {
     display: block;
-    ${'' /* position: absolute
-    top: 0;
-    right: 20; */}
-
+    margin-top: 10px;
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
+  justify-content: right;
+
   }
 `;
+
+// export const 
   
 // the container of the links
 export const Menu = styled.div`

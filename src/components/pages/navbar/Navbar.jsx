@@ -1,36 +1,36 @@
 
 import React from "react";
-import "./navbar.css";
-import { Cont, NavLink, RouteLink, Bars, Menu } from "./NavElements";
+import {Link as RouterLink } from "react-router-dom";
+import "./navbar-styles/navbar.css";
+import { FaBars } from 'react-icons/fa';
+import {ImCross} from "react-icons/im";
+import {Link} from "react-scroll";
 
 export const NavBar = () => {
    // eslint-disable-next-line
-  const brand = {
-    marginRight:"450px",
-    color:"#ffba5a",
-    marginLeft:"10px",
-    fontSize:"2.6rem"
-  }
+ 
 
   return (
-    <Cont>
+    <nav>
 
-      <NavLink to={"/"} spy ={true} activeClass="" smooth= {true} offset={0}>Sogy</NavLink>
+      <Link to={"/"} spy ={true} className="brand" activeClass="" smooth= {true} offset={0}>Sogy</Link>
 
-      <Menu>
+      <ul>
         
-        <NavLink to={"/"} spy={true} activeClass=""  smooth={true} offset={0} duration={1000}>Home</NavLink>
+        <li><Link to={"/"} spy={true} className = "link" activeClass=""  smooth={true} offset={0} duration={1000}>Home</Link></li>
       
-        <NavLink to={"rooms"} spy={true} activeClass=""  smooth={true} offset={0} duration={1000}>Rooms</NavLink>
+        <li><Link to={"rooms"} spy={true} className = "link" activeClass=""  smooth={true} offset={0} duration={1000}>Rooms</Link></li>
       
-        <RouteLink to="/reservations" spy={true} activeClass="" smooth={true} offset>Reservations</RouteLink>
+        <li><RouterLink to="/reservations" className = "link" spy={true} activeClass="" smooth={true} offset>Reservations</RouterLink></li>
       
-        <NavLink to={"contactUs"} spy={true} activeClass=""  smooth={true} offset={0} duration={1000}>Contact Us</NavLink>
+        <li><Link to={"contactUs"} spy={true} className = "link" activeClass=""  smooth={true} offset={0} duration={1000}>Contact Us</Link></li>
        
-      </Menu>
-      <Bars/>
+      </ul>
       
-    </Cont>
+      <FaBars className=" icon"/>
+      <ImCross className=" icon" />
+      
+    </nav>
    
   )
 }

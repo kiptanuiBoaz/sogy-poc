@@ -29,6 +29,7 @@ export const Reservations = () => {
 
     const postUserData = async() =>{
         setLoading(true);
+        console.log(loading);
 
         try{
             // performed asychronously
