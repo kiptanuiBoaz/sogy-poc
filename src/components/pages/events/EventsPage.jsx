@@ -7,18 +7,20 @@ function EventsPage() {
       <Fade left cascade>
       <section className="events">
         {
-          events.map((event)=>{
+          /* mapping throught the events array */
+          events.map(({image:{src,alt},venue,date,theme,description,id})=>{
+            {/* destructuring the event */}
             return(
-              <div>
+              <div key={id}>
                 <div className="left">
-                  <img src ={event.image.src} alt ={event.image.alt}/>
-                  <h1>	&#160;<span>{event.venue}</span>	&#160;</h1>
+                  <img src ={src} alt ={alt}/>
+                  <h1>	&#160;<span>{venue}</span>	&#160;</h1>
                 </div>
                 
                 <div className="right">
-                  <h2>{event.date}</h2>
-                  <h1>{event.theme}</h1>
-                  <p>{event.description}</p>
+                  <h2>{date}</h2>
+                  <h1>{theme}</h1>
+                  <p>{description}</p>
                 </div>
                 
               </div>

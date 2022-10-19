@@ -1,5 +1,6 @@
 const events = [
     {
+        id:1,
         image:{
             src:"https://images.unsplash.com/photo-1626125345510-4603468eedfb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGNvbmZlcmVuY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
             alt:"first event"
@@ -12,6 +13,7 @@ const events = [
     },
 
     {
+        id:2,
         image:{
             src:"https://images.unsplash.com/photo-1596522354195-e84ae3c98731?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fGNvbmZlcmVuY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
             alt:"second event"
@@ -24,6 +26,7 @@ const events = [
     },
 
     {
+        id:3,
         image:{
             src:"https://images.unsplash.com/photo-1511578314322-379afb476865?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fGNvbmZlcmVuY2UlMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
             alt:"third event"
