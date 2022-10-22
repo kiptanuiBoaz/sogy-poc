@@ -9,7 +9,7 @@ function EventsPage() {
         {
           /* mapping throught the events array */
           events.map(({image:{src,alt},venue,date,theme,description,id})=>{
-            {/* destructuring the event */}
+            /* destructuring the event */
             return(
               <div key={id}>
                 <div className="left">

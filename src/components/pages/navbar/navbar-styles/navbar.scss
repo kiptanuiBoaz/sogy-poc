@@ -14,19 +14,24 @@ nav{
         width: 100%;
         background-color: #212529;
         color:#808080;
+        align-items: center;
+
+        
+        @media(min-width: $breakpoint-mobile){
+            margin-top:-50px
+        }
+
+        
     
     
         .brand{
             // display: flex;
             justify-content: left;
-           
-            margin: 25px 0 0 15px;
+            color: #ffba5a;
+            margin: auto auto auto 25px; ;
+            background:  #212529;
             // margin: auto;
     
-            &.active {
-                color: #ffba5a;
-                background:  #212529;
-            }
         }
     
         .list-container{
@@ -38,7 +43,7 @@ nav{
             
             
     
-            ul{
+            .desktop-links{
                 display: flex;
                 flex: space-between;
                 list-style: none;
@@ -92,9 +97,47 @@ nav{
 
     .mobile-container{
         
-        z-index: 7;
-        background-color: red;
-        color: #fff;
+        z-index: 15;
+        margin-top: 30px;
+        color:#808080;
+        position: fixed;
+        top: 20px;
+        width:  100%;
+        background-color: #212529;
+        font-size: 1.3rem;
+      
+
+        hr{
+            color:#808080;
+            height: 0px;
+            margin-right: 70px;
+            width: 85%;
+        }
+       
+        ul{
+            list-style: none;
+
+
+            .mobilelink{
+                list-style: none;
+                text-decoration: none;
+                color:#808080;
+                height: 100%;
+
+                &.active {
+                    color: #ffba5a;
+                    background:  #212529;
+                }
+            }
+
+            
+        }
+
+       
+       
+        @media(min-width: $breakpoint-mobile){
+            display: none;
+        }
 
         &.active {
             color: #ffba5a;
