@@ -128,3 +128,51 @@
 .mainPic{
     box-shadow: 3px 5px 17px #7a848c;
 }
+
+@media only screen and (max-width: 950px){
+ .mainPic{
+        height:40%;
+        width:80%;
+        margin-right:50px;
+        margin-bottom:50px;
+    }
+    .overlay-pic{
+        top:1130px;
+        height: 30%;
+        left: 37%;
+    }
+
+    .welcome-buttons >a:nth-child(1){
+        margin-left: 10px;
+        margin-bottom: -20px;
+    }
+
+    .welcome-buttons >a:nth-child(3){
+        margin-left: 20px;
+        margin-top: -20px;
+        
+    }
+
+    .welcome-buttons>a{
+        height: 60px;
+    }
+
+    .welcome>div>p, .rooms>div>p, .photos>div>p, .eventsHeader>p{
+        font-size: large;
+        padding-top: 1px ;
+        color: #545b61;
+        padding: 1px;
+        font-weight: 200;
+        font-family: cursive;
+    }
+    .rooms>div>h1, .welcome > div >h1, .photos> div> h1, .menu>div>h1,  .eventsHeader>h1{
+        font-family:cursive;
+        font-size: 35px;
+        padding-top:20px;
+        
+        
+    }
+    .welcome{
+        height: 23cm;
+    }
+}

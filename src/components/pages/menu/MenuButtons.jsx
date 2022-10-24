@@ -2,23 +2,21 @@ import React from "react";
 
 
 
-function  MenuButtons(props){   
-    
-    const index = props.index;
-    const setClick = props.setClick;
-    const title = props.title;
-    const foodCategory = props.foodCategory;
+function  MenuButtons({index, setClick,title, foodCategory}){   
+
 
     return(
         <div>
             <button 
-                onClick ={(event)=>{  
-                 setClick(index);
-                 event.preventDefault();
-                }}
-                style={{color: foodCategory===index && "red"}}
+                    onClick ={(event)=>{  
+                    setClick(index);
+                    event.preventDefault();
+                    }}
+                    style={{color: foodCategory===index && "#fd8421"}}
+                    className="menu-buttons"
                 >
-                {title}</button>
+                {`-${title}-`}
+                </button>
         </div>
          
     )
