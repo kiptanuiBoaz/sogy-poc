@@ -6,7 +6,7 @@ function  MenuButtons({index, setClick,title, foodCategory}){
 
 
     return(
-        <div>
+        <div key={index}>
             <button 
                     onClick ={(event)=>{  
                     setClick(index);
@@ -15,7 +15,7 @@ function  MenuButtons({index, setClick,title, foodCategory}){
                     style={{color: foodCategory===index && "#fd8421"}}
                     className="menu-buttons"
                 >
-                {`-${title}-`}
+                    {`-${title}-`}
                 </button>
         </div>
          

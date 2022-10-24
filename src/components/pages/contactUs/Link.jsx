@@ -1,9 +1,9 @@
 import React from "react";
 
 
-function Link (props){
+function Link ({index,href,text}){
     
-     return <a href={props.href}>{props.text}</a>
+     return <a key={index} href={href}>{text}</a>
 
 }
 

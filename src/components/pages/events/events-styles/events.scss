@@ -1,0 +1,115 @@
+/* events section styling */
+$breakpoint-mobile :1128px;
+/* 1128px */
+.eventsContainer{
+    background-color:#ebe8e5;
+    margin-top: -40px;
+
+    .eventsHeader{
+        width: 50%;
+        margin:auto;
+    }
+
+    .events{
+        background-color:#ebe8e5;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top:30px;
+        padding-bottom: 30px;
+
+        .left-and-right{
+            background-color: #fff;
+            display: flex;
+            margin:20px;
+            padding-top: 10px;
+            box-shadow: 3px 5px 17px #545b61;
+            width: 80%;
+            height: 240px;
+            flex-wrap: wrap;
+
+            &:hover{
+                box-shadow: 3px 5px 17px #0e0e10;
+            }
+
+            .right{
+                width:60%;
+                justify-content: left;
+                text-align: left;
+                padding-left: 20px;
+                /* height: 100px; */
+
+                h1{
+                    font-family:Georgia, 'Times New Roman', Times, serif;
+                    padding: 0px 15px;
+                    
+                }
+
+                h2{
+                    font-family:monospace ;
+                    color: #545b61;
+                    text-align: center;
+                    margin-right: 70px;
+                    
+                }
+
+                p{
+                    color:#545b61;
+                    margin:10px;
+                    padding-bottom:20px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+            }
+            
+            .left{
+                margin-top: -10px;
+
+                img{
+                    width:100%;
+                    height: 6.645cm;
+                    // display: inline;
+                    
+                }
+                h1{
+                    position: relative;
+                    font-family: cursive;
+                    background-size: contain;
+                    bottom:90px;
+                    width: fit-content;
+                    font-size: 1.9rem;
+                    background-color: #0e0e10;
+                    opacity: .7;
+                    left:15%;
+                    border-radius: 10%;
+
+                    span{
+                        color: #fff;
+                        z-index: 3;
+                        opacity: 1;
+                    }
+                    
+
+                    &:hover{
+                        opacity: 1;
+                    }
+                    
+                }
+               
+                
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

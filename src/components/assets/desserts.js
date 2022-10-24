@@ -8,7 +8,7 @@ const desserts =[
 
     {
         price:"$26.00",
-        mainDish:"Pecan",
+        mainDish:"Pecan pie",
         description:"Ipsum dolor sit amet consectetur, adipisicing elit. Omus amet distinctio ratione ab voluptatum porro?"
     },
 

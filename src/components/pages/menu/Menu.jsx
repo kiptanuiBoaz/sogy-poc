@@ -4,7 +4,7 @@ import DynamicPage from "./DynamicPage";
 import mains from "../../assets/mains";
 import drinks from "../../assets/drinks";
 import desserts from "../../assets/desserts";
-import "./menu.css"
+import "./menu-styles/menu.css"
 import {MenuTexts} from "./MenuTexts";
 import "../welcome/welcome.css"
 
@@ -33,6 +33,7 @@ export const Menu = () => {
             return(
 
               <MenuButtons 
+                key={index}
                 title= {title} 
                 setClick={setCategory} 
                 index = {index}

@@ -1,6 +1,6 @@
 import React from "react";
 
-function EventsHeader(){
+ const EventsHeader = ()=>{
     return(
         <div className="eventsHeader">
             <h1>Events</h1>

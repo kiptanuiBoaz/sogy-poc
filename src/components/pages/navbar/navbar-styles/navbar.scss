@@ -5,7 +5,7 @@ nav{
     @media(max-width: 320px){
         width:  300px;
     }
-    width: 100%;
+    width: 100vw;
     .nav-container {
     
         height: 70px;
@@ -15,7 +15,7 @@ nav{
         z-index: 12;
         padding:5px;
         position:fixed;
-        width: 100%;
+        width: 100vw;
         background-color: #212529;
         color:#808080;
         align-items: center;
@@ -115,9 +115,10 @@ nav{
         color:#808080;
         position: fixed;
         top: 20px;
-        width:  100%;
+        width:  100vw;
         background-color: #212529;
         font-size: 1.3rem;
+        // left: -20px;
 
       
         @media(max-width: 340px){
@@ -128,7 +129,7 @@ nav{
         hr{
             color:#808080;
             height: 0px;
-            margin-right: 70px;
+            margin-left: 10px;
             width: 85%;
         }
        
@@ -141,6 +142,9 @@ nav{
                 text-decoration: none;
                 color:#808080;
                 height: 100%;
+                margin-right: 10px;
+                
+
 
                 &.active {
                     color: #ffba5a;

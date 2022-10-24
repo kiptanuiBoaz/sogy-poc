@@ -11,13 +11,14 @@ function UsefuLinks(){
         <>
 
             <div  className= "usefuLinks">
-                {links.map((oneLink)=>{
+                {links.map(({text,href},i)=>{
                     return(
-                        <div>
+                        <div key={i}>
                         
                             <Link
-                                text ={oneLink.text }
-                                href={oneLink.href}
+                               index={i}
+                                text ={text }
+                                href={href}
                             />
                             
                         </div>

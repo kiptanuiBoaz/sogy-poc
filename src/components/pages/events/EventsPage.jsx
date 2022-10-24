@@ -2,7 +2,7 @@ import React from "react";
 import events from "../../assets/events";
 import Fade from 'react-reveal/Fade';
 
-function EventsPage() {
+const EventsPage = () => {
     return (
       <Fade left cascade>
       <section className="events">
@@ -11,7 +11,7 @@ function EventsPage() {
           events.map(({image:{src,alt},venue,date,theme,description,id})=>{
             /* destructuring the event */
             return(
-              <div key={id}>
+              <div className="left-and-right" key={id}>
                 <div className="left">
                   <img src ={src} alt ={alt}/>
                   <h1>	&#160;<span>{venue}</span>	&#160;</h1>

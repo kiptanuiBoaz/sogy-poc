@@ -1,0 +1,217 @@
+/* menu styling  */
+    /* the  menu container */
+    $breakpoint-mobile :785px;
+    .menu{
+    
+        background-image:linear-gradient( rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0.711) ),
+        url("https://preview.colorlib.com/theme/sogo/images/xhero_3.jpg.pagespeed.ic.E0AL0Eb0b0.webp");
+        background-attachment: fixed;
+        background-position: center center ;
+        background-size: cover;
+
+        .menu-texts{
+            /* the p and h atop of the menu */
+            width: 60%;
+            margin: 0 auto ;
+            @media(max-width: $breakpoint-mobile){
+                width: 90%;
+            }
+
+
+            h1{
+                /* the title */
+                color:#fff;
+                font-family: cursive;
+                margin-top: -20px;
+                font-size: 50px;
+                padding-top:40px;
+
+                @media(max-width: $breakpoint-mobile){
+                    font-size: 40px;
+                    padding-top:30px;
+                }
+            }
+
+            p{/* the description in the menu */
+                color:#fff;
+                font-size: large;
+                padding-top: 15px ;
+                padding: 10px;
+                font-weight: 300;
+                font-family: cursive;
+                margin: 0px 40px ;
+
+                @media(max-width: $breakpoint-mobile){
+                    margin: 0px 10px ;
+                    padding-top: 4px ;
+                    font-family: Verdana, Geneva, Tahoma, serif;
+                }
+
+            }
+        }
+
+        /* the buttons container */
+        .buttonsContainer{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            @media(max-width: $breakpoint-mobile){
+                flex-wrap: nowrap;
+            }
+
+            button{
+                /* the food types */
+                border: none;
+                color:#ffba5a;
+                background: transparent;
+                font-size: 1.5rem;
+                margin: 20px;
+                font-weight: bold;
+                text-decoration: none;
+                transition: text-decoration 1.5s;
+                letter-spacing: 10px;
+
+                @media(max-width: $breakpoint-mobile){
+                    letter-spacing: 1px;
+                    margin: 5px;
+                    margin: 0.3rem;
+                    font-size: 1.2rem;
+                }
+
+                // &:hover{
+                //     text-decoration: underline #e8a952;
+                //     color:#fd8421;
+                // }
+            }
+        }
+
+        /* the container holding the menuItems */
+        .menu-content{
+            color:rgba(240, 239, 239, 0.746);
+            width: 90%;
+            margin:auto;
+            display:flex;
+            flex-wrap: wrap;
+
+            .menu-content-dynamic{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:  center;
+                width:50%;
+                margin-bottom: 40px;
+
+                &:hover{
+                    color:#fff;
+                }
+
+                h2{
+                    font-size: 2rem;
+
+                    @media(max-width: $breakpoint-mobile){
+                       font-size: 1.3rem;
+                       margin-top:20px;
+                    }
+                }
+                
+                h3{
+                    font-size: 1.8rem;
+                    font-family: monospace;
+                    color:#ffba5a;
+                    font-weight: 200;
+                    display: block;
+                    width: 100%;
+
+                    @media(max-width: $breakpoint-mobile){
+                        font-size: 1.5rem;
+                        margin:-1px;
+                    }
+                }
+
+                p{
+                    width:80%;
+                    margin:auto;
+                    font-size: 1.4rem;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                    @media(max-width: $breakpoint-mobile){
+                        font-size: 1rem;
+                    }
+                }
+                
+            }
+        
+        }
+    }
+
+  
+
+    @media only screen and (max-width: 950px){
+        .menu-texts{
+            width: fit-content;
+        }
+
+        .menu-buttons{
+            font-size: 15px;
+        }
+        
+        .menuContainer{
+            width: 100vw
+        }
+
+        .menuContainer button{
+            width: fit-content;
+            border: none;
+            color:#ffba5a;
+            background: transparent;
+            font-size: 1rem;
+            margin: -10px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: text-decoration 1.5s;
+            letter-spacing: 0px;
+        }
+        .menu-content-dynamic>h2{
+            font-size: 1.3rem;
+        }
+
+        .menu-content-dynamic>h3{
+            font-size: 1.2rem;
+        }
+
+        .menu-content-dynamic>p{
+            font-size: 1.0rem;
+        }
+        .menu-content-dynamic>p{
+            font-size: 1.0rem;
+        }
+        .menu-content-dynamic{
+            margin-bottom: 20px;
+        }
+
+    }
+
+   
+
+
+    
+  
+   
+ 
+
+   
+    // .activebtn>button{
+    //     text-decoration: underline #e8a952;
+    //     color:#fd8421;
+    // }
+
+    // .shape{
+    //     stroke-dasharray: 140 540;
+    //     stroke-dashoffset: -474;
+    //     stroke-width: 8px;
+    //     fill: transparent;
+    //     stroke: #19f6e8;
+    //     border-bottom: 5px solid black;
+    //     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+    // }
+   

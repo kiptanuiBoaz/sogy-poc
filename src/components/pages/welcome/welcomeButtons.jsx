@@ -8,7 +8,7 @@ function WelcomeButtons(){
            
             <a  href="/"><span >Learn More</span></a>
             
-            <p>or</p>
+            <p className="or">or</p>
          
             <a  href="/"><span >See video</span></a>
             
