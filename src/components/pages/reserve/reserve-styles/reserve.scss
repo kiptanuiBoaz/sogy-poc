@@ -1,0 +1,130 @@
+/* reserve container styling */
+$breakpoint-mobile :750px;
+    /* cover */
+.reserve{
+    background-attachment: fixed;
+    font-size:x-large ;
+    color: #fff;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    margin-bottom: 70px;
+    background-position: center;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0.711) ),
+    url("https://preview.colorlib.com/theme/sogo/images/xhero_4.jpg.pagespeed.ic.1tASHklKp8.webp");
+
+    @media(max-width: $breakpoint-mobile){
+        font-size: 14px;
+        margin-bottom: 30px; 
+    }
+
+    .recommendation{
+        border-style: solid;
+        border-image: linear-gradient( to bottom,  #e8a952,  rgba(0, 0, 0, 0)  ) 0.5 100%;
+        h1{
+            width: 550px;
+            text-align: left;
+            margin: 20px 20px 0px 20px;
+
+            @media(max-width: $breakpoint-mobile){
+                width: 80%;
+            }
+
+            span{
+                color:#e8a952;
+            }
+        
+        }
+
+        h3{
+            text-align: right;
+            margin:  0px 20px ;
+            font-weight: 200;
+            font-size: 1.2rem;
+
+            @media(max-width: $breakpoint-mobile){
+                font-size: .7rem;
+                font-weight: 150;
+            }
+
+            span{
+                color:#e8a952;
+            }
+        }
+
+        p{
+            font-size: 1rem;
+            color:#e8a952;
+            font-weight: 200;
+            text-align: right;
+            margin-right: 30px;
+
+            @media(max-width: $breakpoint-mobile){
+                margin: 5px 30px 0 0;
+
+            }
+        }
+    }
+
+    .additionals{
+        padding-left:35px;
+
+        ul{
+            /* we alsa offer */
+            list-style-type:none;
+
+            li{
+                text-align: left;
+                span{
+                    /* the tick */
+                    color:#e8a952
+                }
+            }  
+        }
+    }
+    .r-button{
+        margin-left: 40px;
+        a{
+        
+            font-size: 1.8rem;
+            padding-bottom: -4px;
+            height: 55px;
+            color: white;
+            border-radius: 40px;
+            box-sizing: border-box;
+            border-width:10px; 
+            display: block;
+            height: 60px;
+            font-size: 1.5em;
+            text-decoration: none;
+            width: 250px;
+            z-index: 2;
+            margin: 40px auto 90px;
+            border: 2px solid #ffba5a;
+            align-items: center;
+            background: #0e0e10;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            transition: background 0.5s ease;
+            background:transparent;
+            &:hover{
+                width: 265px;
+                @media(max-width: $breakpoint-mobile){
+                    width: 230px;
+                }
+
+            }
+
+            @media(max-width: $breakpoint-mobile){
+                width: 190px;
+                height: 50px;
+            }
+        } 
+    }
+
+}
+
+   
+       

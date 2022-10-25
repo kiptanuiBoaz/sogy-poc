@@ -1,5 +1,5 @@
 /* events section styling */
-$breakpoint-mobile :1128px;
+$breakpoint-mobile :1300px;
 /* 1128px */
 .eventsContainer{
     background-color:#ebe8e5;
@@ -8,6 +8,10 @@ $breakpoint-mobile :1128px;
     .eventsHeader{
         width: 50%;
         margin:auto;
+
+        @media(max-width: $breakpoint-mobile){
+            width: 80%;
+        }
     }
 
     .events{
@@ -17,6 +21,13 @@ $breakpoint-mobile :1128px;
         justify-content: center;
         padding-top:30px;
         padding-bottom: 30px;
+
+        @media(max-width: $breakpoint-mobile){
+            padding-top:15px;
+            padding-bottom: 15px;
+           
+            flex-direction: row;
+        }
 
         .left-and-right{
             background-color: #fff;
@@ -28,20 +39,41 @@ $breakpoint-mobile :1128px;
             height: 240px;
             flex-wrap: wrap;
 
+            @media(max-width: $breakpoint-mobile){
+                height: fit-content;
+                margin:10px;
+                width: 13cm;
+            }
+
             &:hover{
                 box-shadow: 3px 5px 17px #0e0e10;
             }
 
             .right{
-                width:60%;
+                width: 60%;
                 justify-content: left;
                 text-align: left;
                 padding-left: 20px;
+               
                 /* height: 100px; */
+                @media(max-width: $breakpoint-mobile){
+                    text-align: center;
+                    justify-content: center;
+                    padding-left: 0px;
+                    width: 80%;
+                    margin: -65px auto auto  auto;
+                }
 
                 h1{
                     font-family:Georgia, 'Times New Roman', Times, serif;
                     padding: 0px 15px;
+
+                    @media(max-width: $breakpoint-mobile){
+                        padding: 0px 5px;
+                        font-size: 13px;
+                    }
+
+                    
                     
                 }
 
@@ -50,6 +82,10 @@ $breakpoint-mobile :1128px;
                     color: #545b61;
                     text-align: center;
                     margin-right: 70px;
+                    @media(max-width: $breakpoint-mobile){
+                        margin-right: 0px;
+                        font-size: 12px;
+                    }
                     
                 }
 
@@ -58,6 +94,10 @@ $breakpoint-mobile :1128px;
                     margin:10px;
                     padding-bottom:20px;
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    @media(max-width: $breakpoint-mobile){
+                        font-size: 14px;
+                        margin: 7px;
+                    }
                 }
             }
             
@@ -68,6 +108,9 @@ $breakpoint-mobile :1128px;
                     width:100%;
                     height: 6.645cm;
                     // display: inline;
+                    @media(max-width: $breakpoint-mobile){
+                        height: max-content;
+                    }
                     
                 }
                 h1{

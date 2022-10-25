@@ -5,8 +5,8 @@
     background-color:#0e0e10;
     color:#fff;
     padding:30px;
-    font-size: 1.3rem;
-    ;
+    font-size: 1.2rem;
+    
 }
 
 .footer>div>img{
@@ -23,7 +23,7 @@
 
 .footer>div>a:hover{
   
-    color: blue
+    color:#e8a952
     
 }
 

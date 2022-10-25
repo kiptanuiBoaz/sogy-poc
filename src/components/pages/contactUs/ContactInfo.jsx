@@ -8,12 +8,18 @@ function ContactUs(){
     return(
         <Fade bottom >
             <div className="contactInfo">
-                <ImLocation2 className="topIcon"/>
-                <p><span>Address:&nbsp;</span> Off Mombasa Road Nairobi</p>
-                <FaPhoneAlt  className="restIcon"/>
-                <p><span>Phone:&nbsp;</span>+254 722 222 444</p>
-                <MdEmail  className="restIcon"/> 
-                <p><span>Email:&nbsp;</span>sogy.mail@yahoo.com</p>
+                <div>
+                    <ImLocation2 className="restIcon"/>
+                    <p><span>Address:&nbsp;</span> Mombasa Road </p>
+                </div>
+                <div>
+                    <FaPhoneAlt  className="restIcon"/>
+                    <p><span>Phone:&nbsp;</span>+254 722 222 444</p>
+                </div>
+                <div>
+                    <MdEmail  className="restIcon"/> 
+                    <p><span>Email:&nbsp;</span>sogy.mail@yahoo.com</p>
+                </div>
              
             
             </div>

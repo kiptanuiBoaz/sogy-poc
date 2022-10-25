@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 function Additionals(){
     return(
-        <div>
+        <div className="additionals">
         <Fade right cascade>
           <h1>We also offer</h1>
           <ul >

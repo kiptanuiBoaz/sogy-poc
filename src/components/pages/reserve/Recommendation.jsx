@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 function Recommendation(){
     return(
-        <div>
+        <div className="recommendation">
         <Fade delay={1000} top big cascade>
           <h1><span>"</span>This is a nice plact to stay. Make reservations now! We are the best in the business.<span>"</span></h1>
         </Fade> 

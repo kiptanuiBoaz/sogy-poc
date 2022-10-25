@@ -4,7 +4,7 @@ import links from "../../assets/links";
 import SignUpForm from "./SignUpForm"
 import Fade from 'react-reveal/Fade';
 
-function UsefuLinks(){
+const UsefuLinks = () => {
 
 
     return(
@@ -13,7 +13,7 @@ function UsefuLinks(){
             <div  className= "usefuLinks">
                 {links.map(({text,href},i)=>{
                     return(
-                        <div key={i}>
+                        <div className="link-arr" key={i}>
                         
                             <Link
                                index={i}

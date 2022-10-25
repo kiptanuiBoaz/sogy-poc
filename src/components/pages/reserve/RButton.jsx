@@ -4,9 +4,11 @@ import Jump from 'react-reveal/Jump';
 
 function RButton(){
     return(
-        <Jump delay= {1500} count={20}>
-            {<ReserveButton text={"Reserve "} />}
-        </Jump>
+        <div className="r-button">
+            <Jump delay= {1500} count={20}>
+                {<ReserveButton text={"Reserve Now! "} />}
+            </Jump>
+        </div>
     )
 }
 

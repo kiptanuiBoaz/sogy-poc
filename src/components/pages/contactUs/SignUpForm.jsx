@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ReserveButton from "../homepage/ReserveButton";
+// import ReserveButton from "../homepage/ReserveButton";
 
 function SignUpForm (){
     const [contact,setContact] = useState({
@@ -35,10 +35,11 @@ function SignUpForm (){
             <h1>Hello {contact.title} please sign up for our newsletter</h1>
             <input  onChange ={handleChange} value ={contact.title} name="title" type="text" placeholder="Input your first Name..." />
             <input onChange ={handleChange} value ={contact.email} name="email" type="email" placeholder="Input your Email..." />
-            <ReserveButton
-              text={"Subscribe"}
-              btnclicked= {handleClick}
-            />
+
+            <div className="subscribe-btn">
+              <button onClick= {handleClick} > Subscribe </button>
+            </div>
+           
           </div>
         </form>
         

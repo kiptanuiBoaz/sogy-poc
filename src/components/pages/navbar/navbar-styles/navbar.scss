@@ -94,11 +94,13 @@ nav{
             
                 @media screen and (max-width: $breakpoint-mobile) {
                 display: flex;
-                margin-top: -25px;
+                margin-top: -35px;
                 justify-content: right;
                 transform: translate(-100%, 75%);
                 font-size: 1.8rem;
+                margin-right: 10px;
                 cursor: pointer;
+                height: 30px;
             
                 }
             }
