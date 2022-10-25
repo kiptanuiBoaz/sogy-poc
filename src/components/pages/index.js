@@ -6,6 +6,6 @@ export {Photos}  from "./photosPage/Photos";
 export {Events}  from "./events/EventContainer";
 export {Menu}  from "./menu/Menu";
 export {ContactUs}  from "./contactUs/ContactUs";
-export {NavBar} from "./navbar/NavBar";
+export {NavBar} from "./navbar/Navbar";
 export {Homepage}  from "./homepage/Homepage";
 export {Reservations} from "./bookRoom/Reservations";
