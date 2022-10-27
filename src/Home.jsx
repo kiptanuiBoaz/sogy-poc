@@ -1,10 +1,10 @@
 import React from "react";
-import {NavBar, Homepage, Welcome, Rooms, Photos, Menu, Events, Reserve, ContactUs, Footer} from "./components/pages";
+import {Homepage, Welcome, Rooms, Photos, Menu, Events, Reserve, ContactUs } from "./components/pages";
 
 export const Home = () => {
   return (
     <div className="main-content">
-      <NavBar/>
+    
       <Homepage/>
       <Welcome/>
       <Rooms />
@@ -13,7 +13,7 @@ export const Home = () => {
       <Events />
       <Reserve />
       <ContactUs />
-      <Footer />
+    
     </div>
   )
 }

@@ -6,6 +6,7 @@
     height: 30cm;
     padding-left: 4%;
     padding-right: 4%;
+    padding-bottom: 25px;
 }
 /* 
 @media only screen and (max-width: 950px){
@@ -26,7 +27,7 @@
     font-family:cursive;
     font-size: 50px;
     padding-top:40px;
-    
+    text-align: center;
     
 }
 

@@ -2,7 +2,7 @@
 .reservations{
 
     background-color:#ebe8e5;
-    padding-top: 30px;
+    padding-top: 90px;
     padding-bottom: 100px;
 
     .dash{
@@ -16,7 +16,7 @@
         padding: 40px;
         width: 60%;
         margin:auto;
-        font-size: 1.8rem;
+       
         background-color: #fff;
 
         input{
@@ -26,6 +26,11 @@
             border: 2px solid  #9e9ca3;
             transition: 0.5s;
 
+            label{
+                font-size: 1.6rem;
+                display: block;
+            }
+
             &:focus{
                 border: 2px solid #e8a952;
                 
@@ -33,7 +38,7 @@
 
             .name-input {
                 width: 35%;
-               
+                
             }
 
             .phone-input{

@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 function ContactUs(){
     return(
         <Fade bottom >
-            <div style={{marginTop:"60px"}} className="contactInfo">
+            <div style={{textAlign:"center",marginTop:"20px"}} className="contactInfo">
                 <div>
                     <ImLocation2 className="restIcon topIcon"/>
                     <p><span>Address:&nbsp;</span> Mombasa Road </p>

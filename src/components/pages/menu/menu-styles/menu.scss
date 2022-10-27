@@ -74,9 +74,10 @@
 
                 @media(max-width: $breakpoint-mobile){
                     letter-spacing: 1px;
-                    margin: 5px;
+                    
+                    margin: 15px 4px 10px;
                     margin: 0.3rem;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                 }
 
                 // &:hover{
@@ -100,6 +101,7 @@
                 justify-content:  center;
                 width:50%;
                 margin-bottom: 40px;
+                text-align: center;
 
                 &:hover{
                     color:#fff;

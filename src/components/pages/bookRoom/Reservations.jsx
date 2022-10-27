@@ -7,23 +7,26 @@ import axios from "axios";
 
 export const Reservations = () => {
 
-    const [name, setName]= useState();
-    const [phoneNo, setPhoneNo]= useState();
-    const [email, setEmail]= useState();
-    const [checkOut, setCheckOut]= useState();
-    const [checkIn, setCheckIn]= useState();
-    const [noOfAdults, setNoAdults]= useState();
-    const [noChildren, setNoChildren]= useState();
-    const [ pets, setPet ] = useState(false);
-    const [loading, setLoading ] = useState (false);
-    const [userError, setUserError] = useState ();
+    const [guestDetails, setGuestDeatils]= useState();
+    const [loading, setLoading] = useState();
+    
+ 
+    const handleChange = (e) => {
+        setGuestDeatils({
+          ...guestDetails,
+    
+          // Trimming any whitespace
+          [e.target.name]: e.target.value.trim()
+        });
+    };
+    
+     
 
-
-    const user = {name,phoneNo,email,checkIn,checkOut,noChildren,noOfAdults,pets}
+  
 
     const formSubmit  = (e) => {
         // prevent the refreshing of the page as native button behavior
-        // e.preventDefault(); 
+        e.preventDefault(); 
         postUserData();
     }
 
@@ -36,7 +39,7 @@ export const Reservations = () => {
             const res = await axios({
                 method: 'POST',
                 url:"http://localhost:8080/customers",
-                data: user,
+                data: guestDetails,
 
             })
             // after data has been fetche from api response
@@ -46,8 +49,8 @@ export const Reservations = () => {
 
         catch (error) {
             // handles returnd error from api incase of any
-            setUserError(error)
-            console.log(userError)
+           
+            console.log(error)
         }
     }
     
@@ -63,16 +66,16 @@ export const Reservations = () => {
             <form className="room-form">
             {/* Form for reservation */}
             {/* each input in an external reusable component sets the returend entred  value into respective field */}
-                <Input onChange = { e => setName (e.target.value)} name= "Name" className= "name-input" type= "text"/>
-                <Input onChange = { e => setPhoneNo(e.target.value)}  name= "Phone" className= "phone-input" type= "tel"/>
-                <Input onChange = { e => setEmail(e.target.value)}  name= "Email" className= "email-input" type= "email"/>
-                <Input onChange = { e => setCheckIn(e.target.value)}  name= " Check In" className= "date-input" type= "date"/>
-                <Input onChange = { e => setCheckOut(e.target.value)}  name= "Check Out" className= "date-input" type= "date"/>
-                <Input onChange = { e => setNoAdults(e.target.value)}  name= "Adults" className= "people-input" type= "number"/>
-                <Input onChange = { e => setNoChildren(e.target.value)}  name= "Children" className= "people-input" type= "number"/>
-                <Input onChange = { e => { e.target.value === "on" && setPet(true)}} type="checkbox"  name="Will you be bringing pets?" className="switch"/>
+                <Input onChange = { handleChange} name= "Name" className= "name-input" type= "text"/>
+                <Input onChange = { handleChange}  name= "Phone" className= "phone-input" type= "tel"/>
+                <Input onChange = { handleChange}  name= "Email" className= "email-input" type= "email"/>
+                <Input onChange = { handleChange}  name= " Check In" className= "date-input" type= "date"/>
+                <Input onChange = { handleChange}  name= "Check Out" className= "date-input" type= "date"/>
+                <Input onChange = {handleChange}  name= "Adults" className= "people-input" type= "number"/>
+                <Input onChange = { handleChange}  name= "Children" className= "people-input" type= "number"/>
+                <Input onChange = { handleChange} type="checkbox"  name="pets" className="switch"/>
                 
-                <button onClick={(e) =>{formSubmit(); e.preventDefault(); }}>Reserve now</button>
+                <button onClick = {formSubmit} >Reserve now</button>
             
             </form>
 

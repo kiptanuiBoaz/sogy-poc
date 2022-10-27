@@ -13,6 +13,20 @@
         margin: 0px 25%;
     }
 
+    @media screen and (max-width: 765px){
+        .photosContent {
+            justify-content: center;
+            width: 90%;
+            margin: 0px 5%;
+        }
+
+        .photosCorousel{
+            margin: 0px 5%;
+            margin-bottom: 20px;
+            
+        }
+    }
+
     .photosCorousel{
         margin: 0px 10%;
         margin-bottom: 20px;

@@ -1,0 +1,177 @@
+.contactUs {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -70px auto auto auto;
+    background-color: #1a1a1a;
+    padding: 30px;
+    padding-top: 30px;
+    justify-content: center;
+}
+.contactUs .usefuLinks {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-bottom: 30px;
+}
+@media (max-width: 1004px) {
+    .contactUs .usefuLinks {
+        width: 90%;
+        padding: 10px;
+        font-size: 13px;
+        margin-bottom: -20px;
+    }
+}
+.contactUs .usefuLinks .link-arr {
+    padding: 20px 50px 5px 20px;
+}
+@media (max-width: 1004px) {
+    .contactUs .usefuLinks .link-arr {
+        padding: 10px 15px 5px 15px;
+    }
+}
+.contactUs .usefuLinks .link-arr a {
+    text-decoration: none;
+    padding: 20px;
+    color: #b1b9c0;
+    font-size: 1.6rem;
+}
+@media (max-width: 1004px) {
+    .contactUs .usefuLinks .link-arr a {
+        font-size: 1.2rem;
+    }
+}
+.contactUs .usefuLinks .link-arr a:hover {
+    color: #fff;
+}
+.contactUs .usefuLinks .newsLetter {
+    color: #b1b9c0;
+}
+@media (max-width: 1004px) {
+    .contactUs .usefuLinks .newsLetter {
+        margin: 20px 20px -40px 20px;
+    }
+}
+.contactUs .usefuLinks .newsLetter h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 30px 20px;
+    font-weight: lighter;
+}
+@media (max-width: 1004px) {
+    .contactUs .usefuLinks .newsLetter h1 {
+        margin: 20px;
+    }
+}
+.contactUs .usefuLinks .newsLetter input {
+    border-radius: 2%;
+    display: inline-block;
+    margin: 10px 5px;
+    line-height: 0.8cm;
+    border: 2px solid #e8a952;
+    border-radius: 4px;
+    outline: none;
+    width: 200px;
+    flex-wrap: wrap;
+    
+}
+@media (max-width: 1004px) {
+    .contactUs .usefuLinks .newsLetter input {
+        display: inline-block;
+    }
+}
+.contactUs .usefuLinks .newsLetter input:focus {
+    border: 3px solid #fd8421;
+    border-radius: 4px;
+}
+.contactUs .usefuLinks .newsLetter input::-moz-placeholder {
+    font-size: 1.1rem;
+    margin-bottom: -3px;
+}
+.contactUs .usefuLinks .newsLetter input::placeholder {
+    font-size: 1.1rem;
+    margin-bottom: -3px;
+}
+.contactUs .usefuLinks .newsLetter .subscribe-btn button {
+    font-size: 1.8rem;
+    padding-bottom: -4px;
+    color: #fff;
+    border-radius: 40px;
+    box-sizing: border-box;
+    border-width: 10px;
+    display: block;
+    height: 60px;
+    text-decoration: none;
+    width: 250px;
+    z-index: 2;
+    margin: 40px auto 90px;
+    border: 2px solid #ffba5a;
+    background-color: #ffba5a;
+    align-items: center;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    transition: background 0.5s ease;
+}
+@media (max-width: 1004px) {
+    .contactUs .usefuLinks .newsLetter .subscribe-btn button {
+        margin: 20px auto 90px;
+        font-size: 1.5em;
+        height: 40px;
+        width: 180px;
+    }
+}
+.contactUs .usefuLinks .newsLetter .subscribe-btn button:hover {
+    width: 265px;
+}
+@media (max-width: 1004px) {
+    .contactUs .usefuLinks .newsLetter .subscribe-btn button:hover {
+        width: 240px;
+    }
+}
+@media (max-width: 1004px) {
+    .contactUs .usefuLinks .newsLetter .subscribe-btn button {
+        height: 50px;
+        margin-left: 15px;
+    }
+}
+.contactUs .contactInfo {
+    font-size: 1.6rem;
+}
+@media (max-width: 1004px) {
+    .contactUs .contactInfo {
+        font-size: 1.0rem;
+        margin: -30px;
+        align-items: center;
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 1004px) {
+    .contactUs .contactInfo div {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: 10px;
+        margin-top: -50px;
+        padding: 20px;
+    }
+}
+.contactUs .contactInfo div .restIcon {
+    margin: auto 10px auto auto;
+}
+.contactUs .contactInfo div p {
+    color: #b4bbc1;
+}
+.contactUs .contactInfo div p:hover {
+    color: #fff;
+}
+.contactUs .contactInfo div p span {
+    color: #cdd4d8;
+}
+@media (max-width: 1004px) {
+    .contactUs .contactInfo div p span {
+        display: none;
+    }
+}
