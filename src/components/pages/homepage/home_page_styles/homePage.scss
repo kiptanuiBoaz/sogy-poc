@@ -120,7 +120,8 @@ $breakpoint-mobile :785px;
 
             &:hover{
                 &::after{
-                    content: " \00bb";
+                    content: " U+00AB";
+                  
                 }
             } 
         }
