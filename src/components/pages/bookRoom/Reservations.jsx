@@ -49,7 +49,7 @@ export const Reservations = () => {
   return (
     <section>
       <div className="top">
-      <a className="navig" href="http://localhost:3000/"> &laquo; Go back </a>
+      <a className="navig" href="https://sogy-poc.vercel.app/"> &laquo; Go back </a>
         
         <Link to={"/"} spy={true} className="brand" smooth={true} offset={0}>
           Sogy
