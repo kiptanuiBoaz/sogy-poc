@@ -9,3 +9,4 @@ export {ContactUs}  from "./contactUs/ContactUs";
 export {NavBar} from "./navbar/Navbar";
 export {Homepage}  from "./homepage/Homepage";
 export {Reservations} from "./bookRoom/Reservations";
+export {ScrollUp} from "./scroll-up/ScrollUp"

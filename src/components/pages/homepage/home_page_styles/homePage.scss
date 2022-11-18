@@ -57,8 +57,10 @@ $breakpoint-mobile :785px;
 
     p{    
         color: white;
-        font-size: 17px;
+        font-size: 15px;
         top:100px;
+        margin-left: 10%;
+        margin-right: 10%;
 
         @media (min-width: $breakpoint-mobile){
             font-size: 45px;

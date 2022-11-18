@@ -10,6 +10,7 @@ export const  Homepage = ()=> {
     <div  className= "homepage" name="/">
     
       <h2 className="welcomeText" style={{paddingTop:"130px"}}>WELCOME TO  5 <span style={{color:"#ffba5a"}}>&#9733;</span> &nbsp; HOTEL</h2>
+
       <Typed 
         className="typing-effect"
         strings ={[
@@ -22,7 +23,8 @@ export const  Homepage = ()=> {
         startDelay={ 2000}
         loop 
       />
-      
+      <p>
+Lorem ipsum dolor sit amet. Maecenas pharetra quam ultrices augue lacinia, eu placerat est dictum</p>
 
       <Jump delay= {1500} count={20}>
         {<ReserveButton text= {"Reserve Now"} />}
