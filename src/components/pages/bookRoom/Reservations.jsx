@@ -3,12 +3,14 @@ import "./reservation-styles/reservation.css";
 import { Input } from "./Input";
 import axios from "axios";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router";
 // import {NavBar} from "../navbar/NavBar"
 // import {Footer} from "../footer/Footer"
 
 export const Reservations = () => {
   const [guestDetails, setGuestDeatils] = useState();
   const [loading, setLoading] = useState();
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setGuestDeatils({
@@ -49,7 +51,7 @@ export const Reservations = () => {
   return (
     <section>
       <div className="top">
-      <a className="navig" href="https://sogy-poc.vercel.app/"> &laquo; Go back </a>
+      <p onClick={()=> navigate(-1)} className="navig"> &laquo; Go back </p>
         
         <Link to={"/"} spy={true} className="brand" smooth={true} offset={0}>
           Sogy

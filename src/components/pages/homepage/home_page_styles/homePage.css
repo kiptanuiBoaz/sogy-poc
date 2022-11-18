@@ -1,1 +1,110 @@
-.homepage{background-image:linear-gradient(rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0.711)),url("https://images.squarespace-cdn.com/content/v1/58ff2140ff7c5003d9b4d5e3/1653525853176-FVU7VCVPXAU3NSW5CVVW/unsplash-image-rmUFInoS3iw.jpg?format=1000w");margin-top:-10px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-position:center;background-size:cover;height:650px;text-align:center;padding-top:30px}@media(max-width: 785px){.homepage{padding:30px;height:600px}}.homepage .welcomeText{color:#fff;margin-top:100px;font-size:40px;padding-top:50px;position:relative}@media(max-width: 785px){.homepage .welcomeText{font-size:30px;font-family:cursive}}.homepage .typing-effect{color:#fff;font-size:18px;font-weight:400}@media(min-width: 785px){.homepage .typing-effect{top:60px;font-size:20px;padding:0 30px 0;margin-right:30px}}.homepage p{color:#fff;font-size:15px;top:100px;margin-left:10%;margin-right:10%}@media(min-width: 785px){.homepage p{font-size:45px;top:200px}}.homepage .fourth-text{margin-top:15px;position:relative}.homepage .bn31{color:#fff;border-radius:40px;box-sizing:border-box;border-width:10px;display:block;height:60px;font-size:1.9em;text-decoration:none;width:270px;z-index:2;margin:40px auto 70px;border:2px solid #ffba5a;align-items:center;background:#0e0e10;border-radius:40px;display:flex;justify-content:center;transition:background .5s ease;background:rgba(0,0,0,0)}@media(min-width: 785px){.homepage .bn31{width:270px}}.homepage .bn31:hover{background:rgba(0,0,0,0);color:#0e0e10;font-weight:600;background-image:linear-gradient(to right, #808080 0%, #ffba5a 100%);border:rgba(0,0,0,0)}.homepage .bn31 .bn31span{align-items:center;background:#0e0e10;border-radius:40px;display:flex;justify-content:center;height:100%;transition:background .5s ease;background:rgba(0,0,0,0);width:100%;background:rgba(0,0,0,0)}.homepage .bn31 .bn31span:hover::after{content:" »"}
+@charset "UTF-8";
+.homepage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0.711)), url("https://images.squarespace-cdn.com/content/v1/58ff2140ff7c5003d9b4d5e3/1653525853176-FVU7VCVPXAU3NSW5CVVW/unsplash-image-rmUFInoS3iw.jpg?format=1000w");
+  margin-top: -10px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  text-align: center;
+  padding-top: 30px;
+}
+@media (max-width: 785px) {
+  .homepage {
+    padding: 30px;
+    height: 600px;
+  }
+}
+.homepage .welcomeText {
+  color: white;
+  margin-top: 100px;
+  font-size: 40px;
+  padding-top: 50px;
+  position: relative;
+}
+@media (max-width: 785px) {
+  .homepage .welcomeText {
+    font-size: 30px;
+    font-family: cursive;
+  }
+}
+.homepage .typing-effect {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media (min-width: 785px) {
+  .homepage .typing-effect {
+    top: 60px;
+    font-size: 20px;
+    padding: 0 30px 0;
+    margin-right: 30px;
+  }
+}
+.homepage p {
+  color: white;
+  font-size: 12px;
+  top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+@media (min-width: 785px) {
+  .homepage p {
+    font-size: 45px;
+    top: 200px;
+  }
+}
+.homepage .fourth-text {
+  margin-top: 15px;
+  position: relative;
+}
+.homepage .bn31 {
+  color: white;
+  border-radius: 40px;
+  box-sizing: border-box;
+  border-width: 10px;
+  display: block;
+  height: 60px;
+  font-size: 1.9em;
+  text-decoration: none;
+  width: 270px;
+  z-index: 2;
+  margin: 40px auto 70px;
+  border: 2px solid #ffba5a;
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  transition: background 0.5s ease;
+  background: transparent;
+}
+@media (min-width: 785px) {
+  .homepage .bn31 {
+    width: 270px;
+  }
+}
+.homepage .bn31:hover {
+  background: transparent;
+  color: #0e0e10;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #808080 0%, #ffba5a 100%);
+  border: transparent;
+}
+.homepage .bn31 .bn31span {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  background: transparent;
+  width: 100%;
+  background: transparent;
+}
+.homepage .bn31 .bn31span:hover::after {
+  content: " »";
+}/*# sourceMappingURL=homePage.css.map */
