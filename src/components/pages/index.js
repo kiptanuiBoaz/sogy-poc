@@ -11,3 +11,4 @@ export {Homepage}  from "./homepage/Homepage";
 export {Reservations} from "./bookRoom/Reservations";
 export {ScrollUp} from "./scroll-up/ScrollUp";
 export {SignUp}  from "./sign-up/SignUp";
+// import {Sidebar} from "./sidebar/Sidebar"

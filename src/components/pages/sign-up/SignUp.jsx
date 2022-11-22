@@ -1,66 +1,114 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import "./new.scss";
-import Sidebar from "../../components/sidebar/Sidebar";
-import Navbar from "../../components/navbar/Navbar";
+import Sidebar from "../sidebar/Sidebar";
+// ./src/components/pages/sign-up/SignUp
+// import Navbar from "../../components/navbar/Navbar";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 // import {storageRef ,setDoc, serverTimestamp, doc } from "firebase/firestore";
-import { auth, db, storage } from "../../firebase";
+// import { auth, db, storage } from "../../firebase";
 // import { createUserWithEmailAndPassword } from "firebase/auth";
 // import { ref, getDownloadURL, uploadBytesResumable } from "firebase/storage";
 import {useNavigate} from "react-router-dom";
 
-export const SignUp = ({ inputs, title }) => {
-  const [file, setFile] = useState("");
-  const [data, setData] = useState({});
-  const [perc, setPerce] = useState(null);
-  const navigate = useNavigate();
+export const SignUp = () => {
+    const title="title";
+    const inputs=[
+        {
+            placeholder:"John Doe",
+            label:"label",
+            id:1,
+            type:"text",
+        },
+        {
+            placeholder:"John Doe",
+            label:"label",
+            id:1,
+            type:"text",
+        },
+        {
+            placeholder:"John Doe",
+            label:"label",
+            id:1,
+            type:"text",        },
+        {
+            placeholder:"John Doe",
+            label:"label",
+            id:1,
+            type:"text",        },
+        {
+            placeholder:"John Doe",
+            label:"label",
+            id:1,
+            type:"text",       
+         },
+        {
+            placeholder:"John Doe",
+            label:"label",
+            id:1,
+            type:"text",       
+         },
+        { 
+            placeholder:"John Doe",
+            label:"label",
+            id:1,
+            type:"text",
+            },
+        {
+            placeholder:"John Doe",
+            label:"label",
+            id:1,
+            type:"text",        },]
+        const [file, setFile] = useState("");
+        const [data, setData] = useState({});
+        // const [perc, setPerce] = useState(null);
+        const navigate = useNavigate();
 
-  useEffect(() => {
-    const uploadFile = () => {
+//   useEffect(() => {
+//     const uploadFile = () => {
 
-    //   const name = new Date().getTime() + file.name;
-    // //   const storageRef = ref(storage, name);
-    //   const uploadTask = uploadBytesResumable(storageRef, file);
+//     //   const name = new Date().getTime() + file.name;
+//     // //   const storageRef = ref(storage, name);
+//     //   const uploadTask = uploadBytesResumable(storageRef, file);
 
-      // Register three observers:
-      // 1. 'state_changed' observer, called any time the state changes
-      // 2. Error observer, called on failure
-      // 3. Completion observer, called on successful completion
-    //   uploadTask.on('state_changed',
-    //     (snapshot) => {
-    //       // Observe state change events such as progress, pause, and resume
-    //       // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
-    //       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-    //       setPerce(progress);
-    //       console.log('Upload is ' + progress + '% done');
-    //       switch (snapshot.state) {
-    //         case 'paused':
-    //           console.log('Upload is paused');
-    //           break;
-    //         case 'running':
-    //           console.log('Upload is running');
-    //           break;
-    //         default:
-    //           break;
-    //       }
-    //     },
-    //     (error) => {
-    //       // Handle unsuccessful uploads
-    //       console.log(error);
-    //     },
-    //     () => {
-    //       // Handle successful uploads on complete
-    //       // For instance, get the download URL: https://firebasestorage.googleapis.com/...
-    //       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-    //         setData((prev) => ({ ...prev, img: downloadURL }))
-    //       });
-    //     }
-    //   );
+//       // Register three observers:
+//       // 1. 'state_changed' observer, called any time the state changes
+//       // 2. Error observer, called on failure
+//       // 3. Completion observer, called on successful completion
+//     //   uploadTask.on('state_changed',
+//     //     (snapshot) => {
+//     //       // Observe state change events such as progress, pause, and resume
+//     //       // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+//     //       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+//     //       setPerce(progress);
+//     //       console.log('Upload is ' + progress + '% done');
+//     //       switch (snapshot.state) {
+//     //         case 'paused':
+//     //           console.log('Upload is paused');
+//     //           break;
+//     //         case 'running':
+//     //           console.log('Upload is running');
+//     //           break;
+//     //         default:
+//     //           break;
+//     //       }
+//     //     },
+//     //     (error) => {
+//     //       // Handle unsuccessful uploads
+//     //       console.log(error);
+//     //     },
+//     //     () => {
+//     //       // Handle successful uploads on complete
+//     //       // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+//     //       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+//     //         setData((prev) => ({ ...prev, img: downloadURL }))
+//     //       });
+//     //     }
+//     //   );
 
-    
-    }
-    file && uploadFile();
-  }, [file])
+
+//     }
+//     file && uploadFile();
+//   }, [file])
 
 //   const handleAdd = async (e) => {
 //     e.preventDefault();
@@ -95,7 +143,7 @@ export const SignUp = ({ inputs, title }) => {
     <div className="new">
       <Sidebar />
       <div className="newContainer">
-        <Navbar />
+        
         <div className="top">
           <h1>{title}</h1>
         </div>
@@ -130,7 +178,8 @@ export const SignUp = ({ inputs, title }) => {
                   <input id={id} onChange={handleInput} type={type} placeholder={placeholder} />
                 </div>
               ))}
-              <button dissbled={perc !==null &&  perc < 100} 
+              <button 
+              // dissbled={perc !==null &&  perc < 100} 
             //   onClick={handleAdd}
               >Send</button>
             </form>
