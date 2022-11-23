@@ -15,7 +15,7 @@ export const NavBar = () => {
       <div className="nav-container">
 
       
-        <Link to={"/"} spy ={true} className="brand" activeClass="" smooth= {true} offset={0}>Sogy</Link>
+        <Link to={"/"} spy ={true} className="brand"  smooth= {true} offset={0}>Sogy</Link>
 
         <div className="list-container">
         

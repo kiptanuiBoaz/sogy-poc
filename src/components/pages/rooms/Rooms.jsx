@@ -1,7 +1,8 @@
 import React from "react";
 import RoomCard from "./RoomsCard"
 import roomsList from "../../assets/roomsList"
-import "./rooms.css"
+import "./rooms.css";
+import "../welcome/welcome.css"
 
 
 

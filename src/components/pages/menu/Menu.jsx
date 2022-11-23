@@ -6,6 +6,7 @@ import drinks from "../../assets/drinks";
 import desserts from "../../assets/desserts";
 import "./menu-styles/menu.css"
 import {MenuTexts} from "./MenuTexts";
+// import "../welcome/welcome.css";
 import "../welcome/welcome.css"
 
 

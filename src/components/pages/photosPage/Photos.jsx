@@ -1,7 +1,8 @@
 import React from "react";
 import Zoom from 'react-reveal/Zoom';
 import PhotosCard from "./PhotosCard";
-import "./photos.css"
+import "./photos.css";
+import "../welcome/welcome.css"
 
 export const  Photos = () => {
   return (

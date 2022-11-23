@@ -8,11 +8,13 @@ $breakpoint-mobile :750px;
     background-position: center;
     display: flex;
     flex-wrap: wrap;
+    background-repeat: no-repeat;
     padding: 5%;
+    background-size: cover;
     margin-bottom: 70px;
     background-position: center;
     background-image:linear-gradient( rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0.711) ),
-    url("https://preview.colorlib.com/theme/sogo/images/xhero_4.jpg.pagespeed.ic.1tASHklKp8.webp");
+    url("https://images.unsplash.com/photo-1669111958117-6f3d7c57abc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60");
 
     @media(max-width: $breakpoint-mobile){
         font-size: 14px;

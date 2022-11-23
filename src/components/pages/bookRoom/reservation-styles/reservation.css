@@ -1,51 +1,136 @@
-.reservations {
+section .top {
+  z-index: 15;
+  color: #808080;
+  position: fixed;
+  font-weight: 700;
+  width: 100vw;
+  background-color: #212529;
+  font-size: 1.6rem;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+section .top a {
+  margin: 0 30px;
+  text-decoration: none;
+}
+section .top .navig {
+  color: #808080;
+}
+section .top .navig:hover {
+  color: #fff;
+}
+section .top .navig::after {
+  transform: rotate(180deg);
+}
+section .top .brand {
+  color: #e8a952;
+}
+section .reservations {
   background-color: #ebe8e5;
-  padding-top: 30px;
+  padding-top: 90px;
   padding-bottom: 100px;
 }
-.reservations .dash {
+section .reservations:root {
+  accent-color: #e8a952;
+}
+section .reservations .dash {
   color: #e8a952;
   width: 130%;
 }
-.reservations .room-form {
+section .reservations p {
+  font-size: 1 rem;
+}
+section .reservations .room-form {
   border: 3px solid #e8a952;
   border-radius: 10px;
-  padding: 40px;
-  width: 60%;
+  padding: 70px;
+  width: 50%;
   margin: auto;
-  font-size: 1.8rem;
   background-color: #fff;
 }
-.reservations .room-form input {
+section .reservations .room-form div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 8px 0 0;
+}
+section .reservations .room-form div .name-div {
+  width: 47.5%;
+  display: flex;
+  min-width: 100px;
+}
+@media (max-width: 680px) {
+  section .reservations .room-form div .name-div {
+    width: 45%;
+  }
+}
+section .reservations .room-form div .name-div label {
+  width: 49%;
+  min-width: 100px;
+}
+@media (max-width: 340px) {
+  section .reservations .room-form div .name-div label {
+    wdth: 45%;
+  }
+}
+section .reservations .room-form div .name-div input {
+  width: 100%;
+}
+section .reservations .room-form .switch {
+  display: flex;
+}
+section .reservations .room-form .switch label {
+  width: 80%;
+}
+section .reservations .room-form .switch input[type=checkbox] {
+  width: 30px;
+  margin: auto 0;
+}
+section .reservations .room-form .switch input[type=checkbox]:checked + label:before {
+  background: #e8a952;
+}
+section .reservations .room-form div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  text-align: left;
+  height: 80px;
+  width: 100%;
+}
+section .reservations .room-form div label {
+  width: 95%;
+  margin-top: 20px;
+  color: #8e8d8d;
+}
+section .reservations .room-form div input {
+  width: 95%;
+  border-radius: 3px;
   height: 35px;
-  margin: 20px;
+  outline: none;
+  font-size: 1.2rem;
+  color: rgb(45, 45, 45);
+}
+section .reservations .room-form div input:focus {
+  border: 3px solid #e8a952;
+  background-color: #ebe8e5;
+}
+section .reservations .room-form button {
+  height: 55px;
+  width: 170px;
+  font-size: 1.4rem;
   border-radius: 5px;
-  border: 2px solid #9e9ca3;
-  transition: 0.5s;
+  background-color: #e8a952;
+  color: #fff;
+  border-color: #e8a952;
+  translate: width ease-in-out 5ms;
+  translate: height ease-in-out 5ms;
+  margin: 5px;
 }
-.reservations .room-form input:focus {
-  border: 2px solid #e8a952;
-}
-.reservations .room-form input .name-input {
-  width: 35%;
-}
-.reservations .room-form input .phone-input {
-  width: 35%;
-}
-.reservations .room-form input .date-input {
-  width: 30%;
-}
-.reservations .room-form input .email-input {
-  width: 85%;
-}
-.reservations .room-form input .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-.reservations .room-form input .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+section .reservations .room-form button:hover {
+  background-color: #eca33d;
+  width: 173px;
+  height: 58px;
 }/*# sourceMappingURL=reservation.css.map */

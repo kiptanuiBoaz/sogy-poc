@@ -19,7 +19,7 @@ export const Welcome = () => {
         </Slide>
         
         <Roll duration={1500} left>
-          <img className={"overlay-pic"} src ={"https://preview.colorlib.com/theme/sogo/images/xfood-1.jpg.pagespeed.ic.C-YkWFvGrQ.webp"} alt=" a lady eating" ></img>
+          <img className={"overlay-pic"} src ={"https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"} alt=" a lady eating" ></img>
         </Roll>
 
         <Zoom>

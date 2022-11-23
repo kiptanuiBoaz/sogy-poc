@@ -31,7 +31,7 @@ function SignUpForm (){
 
     return (
         <form>
-          <div className="newsLetter">
+          <div style={{marginTop:"60px", justifyItems:"center", marginRight:"0px"}} className="newsLetter">
             <h1>Hello {contact.title} please sign up for our newsletter</h1>
             <input  onChange ={handleChange} value ={contact.title} name="title" type="text" placeholder="Input your first Name..." />
             <input onChange ={handleChange} value ={contact.email} name="email" type="email" placeholder="Input your Email..." />

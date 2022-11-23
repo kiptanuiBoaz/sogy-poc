@@ -4,7 +4,7 @@
     .menu{
     
         background-image:linear-gradient( rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0.711) ),
-        url("https://preview.colorlib.com/theme/sogo/images/xhero_3.jpg.pagespeed.ic.E0AL0Eb0b0.webp");
+        url("https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60");
         background-attachment: fixed;
         background-position: center center ;
         background-size: cover;
@@ -74,9 +74,10 @@
 
                 @media(max-width: $breakpoint-mobile){
                     letter-spacing: 1px;
-                    margin: 5px;
+                    
+                    margin: 15px 4px 10px;
                     margin: 0.3rem;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                 }
 
                 // &:hover{
@@ -100,6 +101,7 @@
                 justify-content:  center;
                 width:50%;
                 margin-bottom: 40px;
+                text-align: center;
 
                 &:hover{
                     color:#fff;
