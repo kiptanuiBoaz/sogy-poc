@@ -1,4 +1,5 @@
 This is a single page application project
+Check out the deployed prototype [here](https://sogy-poc.vercel.app/)
 
 Tech Stack
 -ReactJs
