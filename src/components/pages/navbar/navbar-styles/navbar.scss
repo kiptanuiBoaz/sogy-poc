@@ -1,171 +1,141 @@
 /* navbar style */
-$breakpoint-mobile :785px;
+$breakpoint-mobile: 785px;
 
-nav{
-    @media(max-width: 320px){
-        width:  300px;
-    }
+nav {
+  @media (max-width: 320px) {
+    width: 300px;
+  }
+  width: 100vw;
+  .nav-container {
+    height: 70px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    z-index: 12;
+    padding: 5px;
+    position: fixed;
     width: 100vw;
-    .nav-container {
-    
-        height: 70px;
-        font-size: 2rem;
-        display: flex;
-        justify-content: center;
-        z-index: 12;
-        padding:5px;
-        position:fixed;
-        width: 100vw;
-        background-color: #212529;
-        color:#808080;
-        align-items: center;
+    background-color: #212529;
+    color: #808080;
+    align-items: center;
 
-    
-        .brand{
-            // display: flex;
-            justify-content: left;
-            color: #ffba5a;
-            margin: auto auto auto 25px; ;
-            background:  #212529;
-            // margin: auto;
-    
-        }
-    
-        .list-container{
-    
-            width: 100%;
-            display: flex;
-            justify-content: right;
-            align-content: right;
-            
-            
-    
-            .desktop-links{
-                display: flex;
-                flex: space-between;
-                list-style: none;
-                margin-right: 40px;
-
-                @media(min-width: 1000px){
-                    margin-right: 120px;
-                    
-                }
-                @media(max-width: 820px){
-                    margin-right: 20px;
-                }
-                
-    
-                @media(max-width: $breakpoint-mobile){
-                    display: none;
-                }
-                
-                .link {
-                    
-                    color:#808080;
-                    align-items: center;
-                    text-decoration: none;
-                    padding: 0 1rem;
-                    height: 100%;
-                    cursor: pointer;
-                    margin-top: 10px;
-
-                    @media(min-width: 1000px){
-                      width: 110px;
-                        
-                    }
-                
-                    &.active {
-                    color: #ffba5a;
-                    background:  #212529;
-                    }
-
-                   
-                    
-                }
-    
-                
-            }
-    
-    
-        
-            .icon {
-                display: none;
-                color: #808080;
-            
-                @media screen and (max-width: $breakpoint-mobile) {
-                display: flex;
-                margin-top: -35px;
-                justify-content: right;
-                transform: translate(-100%, 75%);
-                font-size: 1.8rem;
-                margin-right: 10px;
-                cursor: pointer;
-                height: 30px;
-            
-                }
-            }
-        }
-    
-       
-        
+    .brand {
+      justify-content: left;
+      color: #ffba5a;
+      margin: auto auto auto 25px;
+      background: #212529;
     }
 
-    .mobile-container{
-        
-        z-index: 15;
-        margin-top: 45px;
-        color:#808080;
-        position: fixed;
-        top: 20px;
-        width:  100vw;
-        background-color: #212529;
+    .list-container {
+      width: 100%;
+      display: flex;
+      justify-content: right;
+      align-content: right;
+
+      .desktop-links {
+        display: flex;
+        flex: space-between;
+        list-style: none;
+        margin-right: 40px;
         font-size: 1.3rem;
-        text-align: center;
-      
-        @media(max-width: 340px){
-            width:340px;
+
+        @media (min-width: 1000px) {
+          margin-right: 120px;
         }
-      
-
-        hr{
-            color:#808080;
-            height: 0px;
-            margin-left: 10px;
-            width: 85%;
-        }
-       
-        ul{
-            list-style: none;
-
-
-            .mobilelink{
-                list-style: none;
-                text-decoration: none;
-                color:#808080;
-                height: 100%;
-                margin-right: 10px;
-                
-
-
-                &.active {
-                    color: #ffba5a;
-                    background:  #212529;
-                }
-            }
-
-            
+        @media (max-width: 820px) {
+          margin-right: 20px;
         }
 
-       
-       
-        @media(min-width: $breakpoint-mobile){
-            display: none;
+        @media (max-width: $breakpoint-mobile) {
+          display: none;
         }
+
+        .link {
+          color: #808080;
+          align-items: center;
+          text-decoration: none;
+          padding: 0 1rem;
+          height: 100%;
+          cursor: pointer;
+          margin-top: 10px;
+
+
+          @media (min-width: 1000px) {
+            width: 110px;
+          }
+
+          &.active {
+            color: #ffba5a;
+            background: #212529;
+          }
+        }
+      }
+
+      .icon {
+        display: none;
+        color: #808080;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+          display: flex;
+          margin-top: -35px;
+          justify-content: right;
+          transform: translate(-100%, 75%);
+          font-size: 1.8rem;
+          margin-right: 10px;
+          cursor: pointer;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  .mobile-container {
+    z-index: 15;
+    margin-top: 45px;
+    color: #808080;
+    position: fixed;
+    top: 20px;
+    width: 100vw;
+    background-color: #212529;
+    font-size: 1.3rem;
+    text-align: center;
+    cursor:pointer;
+
+    @media (max-width: 340px) {
+      width: 340px;
+    }
+
+    hr {
+      color: #808080;
+      height: 0px;
+      margin-left: 10px;
+      width: 85%;
+    }
+
+    ul {
+      list-style: none;
+
+      .mobilelink {
+        list-style: none;
+        text-decoration: none;
+        color: #808080;
+        height: 100%;
+        margin-right: 10px;
 
         &.active {
-            color: #ffba5a;
-            background:  #212529;
+          color: #ffba5a;
+          background: #212529;
         }
+      }
     }
-}
 
+    @media (min-width: $breakpoint-mobile) {
+      display: none;
+    }
+
+    &.active {
+      color: #ffba5a;
+      background: #212529;
+    }
+  }
+}
